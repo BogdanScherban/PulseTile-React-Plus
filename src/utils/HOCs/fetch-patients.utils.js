@@ -165,8 +165,8 @@ export const fetchSeriesOnMount = ({
 // export const fetchPatientPersonalNotesDetailOnMount = (generateFetchDetailOnMount('fetchPatientPersonalNotesDetailRequest'));
 
 // Procedures
-// export const fetchPatientProceduresOnMount = (generateFetchListOnMount('fetchPatientProceduresRequest'));
-// export const fetchPatientProceduresDetailOnMount = (generateFetchDetailOnMount('fetchPatientProceduresDetailRequest'));
+export const fetchPatientProceduresOnMount = (generateFetchListOnMount('fetchPatientProceduresRequest'));
+export const fetchPatientProceduresDetailOnMount = (generateFetchDetailOnMount('fetchPatientProceduresDetailRequest'));
 
 // Referrals
 // export const fetchPatientReferralsOnMount = (generateFetchListOnMount('fetchPatientReferralsRequest'));
@@ -195,8 +195,8 @@ export const fetchSeriesOnMount = ({
 // export const fetchPatientTopThreeThingsDetailOnMount = (generateFetchDetailOnMount('fetchPatientTopThreeThingsDetailRequest'));
 
 // PROMS
-// export const fetchPatientPromsOnMount = (generateFetchListOnMount('fetchPatientPromsRequest'));
-// export const fetchPatientPromsDetailOnMount = (generateFetchDetailOnMount('fetchPatientPromsDetailRequest'));
+export const fetchPatientPromsOnMount = (generateFetchListOnMount('fetchPatientPromsRequest'));
+export const fetchPatientPromsDetailOnMount = (generateFetchDetailOnMount('fetchPatientPromsDetailRequest'));
 
 // Vitals
 // export const fetchPatientVitalsOnMount = (generateFetchListOnMount('fetchPatientVitalsRequest'));

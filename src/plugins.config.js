@@ -8,7 +8,7 @@ import contacts from './components/pages/Contacts/index';
 // WERE REMOVED TO BRONZE PLUGINS
 // import diaryEntry from './components/pages/DiaryEntry/index';
 // import genericPlugin from './components/pages/GenericPlugin/index';
-// import proms from './components/pages/PROMs/index';
+import proms from './components/pages/PROMs/index';
 // import feeds from './components/pages/Feeds/index';
 
 // WERE REMOVED TO SILVER PLUGINS
@@ -20,7 +20,7 @@ import contacts from './components/pages/Contacts/index';
 // import mdts from './components/pages/GenericMdt/index';
 // import orders from './components/pages/Orders/index';
 // import personalNotes from './components/pages/PersonalNotes/index';
-// import procedures from './components/pages/Procedures/index';
+import procedures from './components/pages/Procedures/index';
 // import referrals from './components/pages/Referrals/index';
 // import testResults from './components/pages/Results/index';
 // import topThreeThings from './components/pages/TopThreeThings/index';
@@ -42,7 +42,7 @@ export const plugins = [
   // WERE REMOVED TO BRONZE PLUGINS
   // diaryEntry,
   // genericPlugin,
-  // proms,
+  proms,
   // feeds,
 
   // WERE REMOVED TO SILVER PLUGINS
@@ -54,7 +54,7 @@ export const plugins = [
   // mdts,
   // orders,
   // personalNotes,
-  // procedures,
+  procedures,
   // referrals,
   // topThreeThings,
   // transfersOfCare,

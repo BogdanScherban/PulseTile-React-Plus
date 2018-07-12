@@ -22,8 +22,10 @@ import { patientMedicationsDetailSelector } from '../../pages/Medications/select
 // import { patientVitalsDetailSelector } from '../../pages/Vitals/selectors';
 // import { fetchPatientReferralsDetailRequest } from '../../pages/Referrals/ducks/fetch-patient-referrals-detail.duck';
 // import { patientReferralsDetailSelector } from '../../pages/Referrals/selectors';
-// import { fetchPatientProceduresDetailRequest } from '../../pages/Procedures/ducks/fetch-patient-procedures-detail.duck';
-// import { patientProceduresDetailSelector } from '../../pages/Procedures/selectors';
+
+// Procedures
+import { fetchPatientProceduresDetailRequest } from '../../pages/Procedures/ducks/fetch-patient-procedures-detail.duck';
+import { patientProceduresDetailSelector } from '../../pages/Procedures/selectors';
 
 const mapDispatchToProps = dispatch => ({
   actions: bindActionCreators({
@@ -33,7 +35,7 @@ const mapDispatchToProps = dispatch => ({
 
     // THESE PLUGINS WERE EXTRACTED FROM MAIN AND RELOCATED TO SILVER-PLUGINS
     // fetchPatientVitalsDetailRequest,
-    // fetchPatientProceduresDetailRequest,
+    fetchPatientProceduresDetailRequest,
     // fetchPatientEventsDetailRequest,
     // fetchPatientReferralsDetailRequest,
 
@@ -45,7 +47,7 @@ const mapDispatchToProps = dispatch => ({
 // THESE PLUGINS WERE EXTRACTED FROM MAIN AND RELOCATED TO SILVER-PLUGINS
 // @connect(patientVitalsDetailSelector)
 // @connect(patientEventsDetailSelector)
-// @connect(patientProceduresDetailSelector)
+@connect(patientProceduresDetailSelector)
 // @connect(patientReferralsDetailSelector)
 
 export default class RecordsOfTablePopover extends PureComponent {
@@ -82,11 +84,12 @@ export default class RecordsOfTablePopover extends PureComponent {
       //   fetchDetail: 'fetchPatientReferralsDetailRequest',
       //   stateName: 'referralDetail',
       // },
-      // procedures: {
-      //   title: 'Procedures',
-      //   fetchDetail: 'fetchPatientProceduresDetailRequest',
-      //   stateName: 'procedureDetail',
-      // },
+
+      procedures: {
+        title: 'Procedures',
+        fetchDetail: 'fetchPatientProceduresDetailRequest',
+        stateName: 'procedureDetail',
+      },
 
     },
     sourceId: '',

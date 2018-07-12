@@ -23,7 +23,7 @@ export const clientUrls = {
   // MDTS: 'mdt',
   // ORDERS: 'orders',
   // PERSONAL_NOTES: 'personalNotes',
-  // PROCEDURES: 'procedures',
+  PROCEDURES: 'procedures',
   // RESULTS: 'results',
   // REFERRALS: 'referrals',
   // TOP_THREE_THINGS: 'topThreeThings',
@@ -32,7 +32,7 @@ export const clientUrls = {
   // VITALS: 'vitals',
 
   // These plugins were extracted and relocated to BRONZE
-  // PROMS: 'proms',
+  PROMS: 'proms',
   // GENERIC_PLUGIN: 'genericPlugin',
   // DIARY_ENTRY: 'diaryEntry',
   // FEEDS: 'feeds',
@@ -130,12 +130,12 @@ const pluginsPages = {
   //     state: '/referrals',
   //   }],
   // },
-  // 'procedures': {
-  //   breadcrumbs: [{
-  //     title: 'Procedures',
-  //     state: '/procedures',
-  //   }],
-  // },
+  'procedures': {
+    breadcrumbs: [{
+      title: 'Procedures',
+      state: '/procedures',
+    }],
+  },
   // 'results': {
   //   breadcrumbs: [{
   //     title: 'Results',

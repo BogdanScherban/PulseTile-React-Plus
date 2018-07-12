@@ -21,8 +21,10 @@ import { patientMedicationsSelector } from '../../pages/Medications/selectors';
 // import { patientVitalsSelector } from '../../pages/Vitals/selectors';
 // import { fetchPatientReferralsRequest } from '../../pages/Referrals/ducks/fetch-patient-referrals.duck';
 // import { patientReferralsSelector } from '../../pages/Referrals/selectors';
-// import { fetchPatientProceduresRequest } from '../../pages/Procedures/ducks/fetch-patient-procedures.duck';
-// import { patientProceduresSelector } from '../../pages/Procedures/selectors';
+
+// Procedures
+import { fetchPatientProceduresRequest } from '../../pages/Procedures/ducks/fetch-patient-procedures.duck';
+import { patientProceduresSelector } from '../../pages/Procedures/selectors';
 
 const PREFIX_POPOVER_ID = 'rot-popover-';
 
@@ -36,7 +38,7 @@ const mapDispatchToProps = dispatch => ({
     // fetchPatientVitalsRequest,
     // fetchPatientEventsRequest,
     // fetchPatientReferralsRequest,
-    // fetchPatientProceduresRequest,
+    fetchPatientProceduresRequest,
 
   }, dispatch) });
 
@@ -47,7 +49,8 @@ const mapDispatchToProps = dispatch => ({
 // @connect(patientVitalsSelector)
 // @connect(patientEventsSelector)
 // @connect(patientReferralsSelector)
-// @connect(patientProceduresSelector)
+
+@connect(patientProceduresSelector)
 
 export default class RecordsOfTable extends PureComponent {
   static defaultProps = {
@@ -97,13 +100,15 @@ export default class RecordsOfTable extends PureComponent {
       //   setMethodName: 'setEventsRecords',
       //   records: null,
       // },
-      // procedures: {
-      //   title: 'Procedures',
-      //   fetchList: 'fetchPatientProceduresRequest',
-      //   stateName: 'allProcedures',
-      //   setMethodName: 'setProceduresRecords',
-      //   records: null,
-      // },
+
+      procedures: {
+        title: 'Procedures',
+        fetchList: 'fetchPatientProceduresRequest',
+        stateName: 'allProcedures',
+        setMethodName: 'setProceduresRecords',
+        records: null,
+      },
+
       // referrals: {
       //   title: 'Referrals',
       //   fetchList: 'fetchPatientReferralsRequest',

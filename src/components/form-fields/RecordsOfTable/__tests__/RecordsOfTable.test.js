@@ -183,7 +183,7 @@ describe('Component <RecordsOfTable />', () => {
         match={match}
       />)
         .dive()
-        // .dive()  // For Procedures-plugin
+        .dive()  // For Procedures-plugin
         // .dive()  // For Referral-plugin
         // .dive()  // For Silver-plugin Vitals
         // .dive()  // For Silver-plugin Events
@@ -346,7 +346,7 @@ describe('Component <RecordsOfTable />', () => {
         isSubmit
       />)
         .dive()
-        // .dive()  // For Procedures-plugin
+        .dive()  // For Procedures-plugin
         // .dive()  // For Referral-plugin
         // .dive()  // For Silver-plugin Vitals
         // .dive()  // For Silver-plugin Events
@@ -371,7 +371,7 @@ describe('Component <RecordsOfTable />', () => {
         isSubmit={false}
       />)
         .dive()
-        // .dive()  // For Procedures-plugin
+        .dive()  // For Procedures-plugin
         // .dive()  // For Referral-plugin
         // .dive()  // For Silver-plugin Vitals
         // .dive()  // For Silver-plugin Events
@@ -413,7 +413,7 @@ describe('Component <RecordsOfTable />', () => {
         isNotDragAndDropOfRaws
       />)
         .dive()
-        // .dive()  // For Procedures-plugin
+        .dive()  // For Procedures-plugin
         // .dive()  // For Referral-plugin
         // .dive()  // For Silver-plugin Vitals
         // .dive()  // For Silver-plugin Events
@@ -445,7 +445,7 @@ describe('Component <RecordsOfTable />', () => {
         isNotDragAndDropOfRaws
       />)
         .dive()
-        // .dive()  // For Procedures-plugin
+        .dive()  // For Procedures-plugin
         // .dive()  // For Referral-plugin
         // .dive()  // For Silver-plugin Vitals
         // .dive()  // For Silver-plugin Events
@@ -474,7 +474,7 @@ describe('Component <RecordsOfTable />', () => {
         isOnlyOneRecord
       />)
         .dive()
-        // .dive()  // For Procedures-plugin
+        .dive()  // For Procedures-plugin
         // .dive()  // For Referral-plugin
         // .dive()  // For Silver-plugin Vitals
         // .dive()  // For Silver-plugin Events
@@ -504,7 +504,7 @@ describe('Component <RecordsOfTable />', () => {
         isNotDragAndDropOfRaws
       />)
         .dive()
-        // .dive()  // For Procedures-plugin
+        .dive()  // For Procedures-plugin
         // .dive()  // For Referral-plugin
         // .dive()  // For Silver-plugin Vitals
         // .dive()  // For Silver-plugin Events
