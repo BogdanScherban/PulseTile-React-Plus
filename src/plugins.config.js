@@ -18,7 +18,7 @@ import documents from './components/pages/Documents/index';
 import drawings from './components/pages/Drawings/index';
 // import events from './components/pages/Events/index';
 import mdts from './components/pages/GenericMdt/index';
-// import orders from './components/pages/Orders/index';
+import orders from './components/pages/Orders/index';
 // import personalNotes from './components/pages/PersonalNotes/index';
 import procedures from './components/pages/Procedures/index';
 // import referrals from './components/pages/Referrals/index';
@@ -52,7 +52,7 @@ export const plugins = [
   drawings,
   // events,
   mdts,
-  // orders,
+  orders,
   // personalNotes,
   procedures,
   // referrals,

@@ -21,7 +21,7 @@ export const clientUrls = {
   DRAWINGS: 'drawings',
   // EVENTS: 'events',
   MDTS: 'mdt',
-  // ORDERS: 'orders',
+  ORDERS: 'orders',
   // PERSONAL_NOTES: 'personalNotes',
   PROCEDURES: 'procedures',
   // RESULTS: 'results',
@@ -112,12 +112,12 @@ const pluginsPages = {
       state: '/mdt',
     }],
   },
-  // 'orders': {
-  //   breadcrumbs: [{
-  //     title: 'Orders',
-  //     state: '/orders',
-  //   }],
-  // },
+  'orders': {
+    breadcrumbs: [{
+      title: 'Orders',
+      state: '/orders',
+    }],
+  },
   // 'personalNotes': {
   //   breadcrumbs: [{
   //     title: 'Personal Notes',
