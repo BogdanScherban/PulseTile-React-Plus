@@ -26,7 +26,7 @@ export const clientUrls = {
   PROCEDURES: 'procedures',
   // RESULTS: 'results',
   // REFERRALS: 'referrals',
-  // TOP_THREE_THINGS: 'topThreeThings',
+  TOP_THREE_THINGS: 'topThreeThings',
   // TRANSFERS_OF_CARE: 'transfer-of-care',
   VACCINATIONS: 'vaccinations',
   // VITALS: 'vitals',
@@ -142,12 +142,12 @@ const pluginsPages = {
   //     state: '/results',
   //   }],
   // },
-  // 'topThreeThings': {
-  //   breadcrumbs: [{
-  //     title: 'Top 3 Things',
-  //     state: '/topThreeThings',
-  //   }],
-  // },
+  'topThreeThings': {
+    breadcrumbs: [{
+      title: 'Top 3 Things',
+      state: '/topThreeThings',
+    }],
+  },
   // 'transfer-of-care': {
   //   breadcrumbs: [{
   //     title: 'Transfers Of Care',

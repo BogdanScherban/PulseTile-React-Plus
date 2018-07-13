@@ -39,8 +39,8 @@ const store = mockStore({
   patientsAllergies: {},
   patientsMedications: {},
   patientsVaccinations: {},
+  patientsTopThreeThings: {},
 
-  // patientsTopThreeThings: {},
   // feeds: [{
   //   name: 'Leeds Live - Whats on',
   //   landingPageUrl: 'https://www.leeds-live.co.uk/best-in-leeds/whats-on-news/',
@@ -105,7 +105,7 @@ describe('Component <PatientsSummary />', () => {
         .dive()
         // .dive()
         // .dive()
-        // .dive()  // For TopThreeThings-plugin
+        .dive()  // For TopThreeThings-plugin
         .dive()  // For Vaccinations-plugin
         .dive();
 
@@ -117,7 +117,7 @@ describe('Component <PatientsSummary />', () => {
     expect(component.find('.page-wrapper')).toHaveLength(1);
     expect(component.find('PatientsSummaryListHeader')).toHaveLength(1);
     expect(component.find('.dashboard')).toHaveLength(1);
-    expect(component.find('SimpleDashboardPanel')).toHaveLength(5);
+    expect(component.find('SimpleDashboardPanel')).toHaveLength(4);
     expect(component.find('ConfirmationModal')).toHaveLength(0);
 
     component.instance().handleGoToState('contacts');
@@ -165,7 +165,7 @@ describe('Component <PatientsSummary />', () => {
         .dive()
         // .dive()
         // .dive()
-        // .dive()  // For TopThreeThings-plugin
+        .dive()  // For TopThreeThings-plugin
         .dive()  // For Vaccinations-plugin
         .dive();
 
@@ -193,7 +193,7 @@ describe('Component <PatientsSummary />', () => {
   //       .dive()
   //       .dive()
   //       .dive()
-  //       // .dive()  // For TopThreeThings-plugin
+        // .dive()  // For TopThreeThings-plugin
         // .dive()  // For Vaccinations-plugin
   //       .dive();
   //

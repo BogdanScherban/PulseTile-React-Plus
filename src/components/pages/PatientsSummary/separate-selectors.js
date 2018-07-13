@@ -71,19 +71,19 @@ const patientVaccinationsSelector = createSelector(
   }
 );
 
-// const patientTopThreeThingsSelector = createSelector(
-//   ({ patientsTopThreeThings }) => patientsTopThreeThings,
-//   (state, props) => _.getOr(null, 'match.params.userId', props),
-//   (patientsTopThreeThings, userId) => {
-//     let topThreeThings = {};
-//     if (patientsTopThreeThings[userId]) {
-//       topThreeThings = patientsTopThreeThings[userId];
-//     } else {
-//       topThreeThings = [{text: 'Loading ...'}, '', '', ''];
-//     }
-//     return topThreeThings;
-//   }
-// );
+const patientTopThreeThingsSelector = createSelector(
+  ({ patientsTopThreeThings }) => patientsTopThreeThings,
+  (state, props) => _.getOr(null, 'match.params.userId', props),
+  (patientsTopThreeThings, userId) => {
+    let topThreeThings = {};
+    if (patientsTopThreeThings[userId]) {
+      topThreeThings = patientsTopThreeThings[userId];
+    } else {
+      topThreeThings = [{text: 'Loading ...'}, '', '', ''];
+    }
+    return topThreeThings;
+  }
+);
 
 export const summarySynopsisSelector = createSelector(
   patientProblemsSelector,
@@ -91,9 +91,9 @@ export const summarySynopsisSelector = createSelector(
   patientAllergiesSelector,
   patientMedicationsSelector,
 
-  // Plugins were extracted and relocated to SILVER-plugins
+  // SILVER-plugins
   patientVaccinationsSelector,
-  // patientTopThreeThingsSelector,
+  patientTopThreeThingsSelector,
 
   (
     problems,
@@ -101,9 +101,9 @@ export const summarySynopsisSelector = createSelector(
     allergies,
     medications,
 
-    // Plugins were extracted and relocated to SILVER-plugins
+    // SILVER-plugins
     vaccinations,
-    // topThree
+    topThree
 
   ) => {
     return {
@@ -113,9 +113,9 @@ export const summarySynopsisSelector = createSelector(
         allergies: allergies,
         medications: medications,
 
-        // Plugins were extracted and relocated to SILVER-plugins
+        // SILVER-plugins
         vaccinations: vaccinations,
-        // topThreeThings: topThree,
+        topThreeThings: topThree,
       }
     };
   }

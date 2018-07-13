@@ -22,7 +22,7 @@ import {
   fetchPatientAllergiesSynopsisOnMount,
   fetchPatientMedicationsSynopsisOnMount,
   fetchPatientVaccinationsSynopsisOnMount,
-  // fetchPatientTopThreeThingsSynopsisOnMount,
+  fetchPatientTopThreeThingsSynopsisOnMount,
   // fetchFeedsOnMount
 } from '../../../utils/HOCs/fetch-patients.utils';
 
@@ -31,7 +31,7 @@ import { getNameFromUrl } from '../../../utils/rss-helpers';
 import { testConstants, isDevMode } from '../../../config/for-test.constants';
 
 // Plugins were commented because of plugins were extracted from the main repository
-// import { fetchPatientTopThreeThingsSynopsisRequest } from '../TopThreeThings/ducks/fetch-patient-top-three-things.duck';
+import { fetchPatientTopThreeThingsSynopsisRequest } from '../TopThreeThings/ducks/fetch-patient-top-three-things.duck';
 import { fetchPatientVaccinationsSynopsisRequest } from '../Vaccinations/ducks/fetch-patient-vaccinations.duck';
 // import { fetchFeedsRequest } from '../Feeds/ducks/fetch-feeds.duck';
 // import { feedsSelector } from '../Feeds/selectors';
@@ -47,7 +47,7 @@ const mapDispatchToProps = dispatch => ({
 
       // Plugins were commented because of plugins were extracted from the main repository
       fetchPatientVaccinationsSynopsisRequest,
-      // fetchPatientTopThreeThingsSynopsisRequest,
+      fetchPatientTopThreeThingsSynopsisRequest,
       // fetchFeedsRequest
 
   }, dispatch) });
@@ -65,7 +65,7 @@ const mapDispatchToProps = dispatch => ({
 
   // Plugins were commented because of plugins were extracted from the main repository
   lifecycle(fetchPatientVaccinationsSynopsisOnMount),
-  // lifecycle(fetchPatientTopThreeThingsSynopsisOnMount),
+  lifecycle(fetchPatientTopThreeThingsSynopsisOnMount),
   // lifecycle(fetchFeedsOnMount)
 )
 

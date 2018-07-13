@@ -191,9 +191,9 @@ export const fetchPatientVaccinationsDetailOnMount = (generateFetchDetailOnMount
 // export const fetchPatientTransfersOfCareDetailOnMount = (generateFetchDetailOnMount('fetchPatientTransfersOfCareDetailRequest'));
 
 // TopThreeThings
-// export const fetchPatientTopThreeThingsOnMount = (generateFetchListOnMount('fetchPatientTopThreeThingsRequest'));
-// export const fetchPatientTopThreeThingsSynopsisOnMount = (generateFetchListOnMount('fetchPatientTopThreeThingsSynopsisRequest'));
-// export const fetchPatientTopThreeThingsDetailOnMount = (generateFetchDetailOnMount('fetchPatientTopThreeThingsDetailRequest'));
+export const fetchPatientTopThreeThingsOnMount = (generateFetchListOnMount('fetchPatientTopThreeThingsRequest'));
+export const fetchPatientTopThreeThingsSynopsisOnMount = (generateFetchListOnMount('fetchPatientTopThreeThingsSynopsisRequest'));
+export const fetchPatientTopThreeThingsDetailOnMount = (generateFetchDetailOnMount('fetchPatientTopThreeThingsDetailRequest'));
 
 // PROMS
 export const fetchPatientPromsOnMount = (generateFetchListOnMount('fetchPatientPromsRequest'));

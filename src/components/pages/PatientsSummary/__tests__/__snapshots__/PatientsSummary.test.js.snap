@@ -26,6 +26,7 @@ exports[`Component <PatientsSummary /> should renders with Disclaimer Modal corr
               "contacts": true,
               "medications": true,
               "problems": true,
+              "topThreeThings": true,
               "vaccinations": true,
             }
           }
@@ -123,26 +124,6 @@ exports[`Component <PatientsSummary /> should renders with Disclaimer Modal corr
               srcPrevirew="/images/patients-summary/medications.jpg"
               state="medications"
               title="Medications"
-            />
-            <SimpleDashboardPanel
-              goToState={[Function]}
-              isFeeds={false}
-              isHasList={true}
-              isHasPreview={true}
-              items={
-                Array [
-                  Object {
-                    "text": "Loading ...",
-                  },
-                  "",
-                  "",
-                  "",
-                ]
-              }
-              key="4"
-              srcPrevirew="/images/patients-summary/vaccinations.jpg"
-              state="vaccinations"
-              title="Vaccinations"
             />
           </div>
         </div>
@@ -192,6 +173,7 @@ exports[`Component <PatientsSummary /> should renders with all props correctly 1
               "contacts": true,
               "medications": true,
               "problems": true,
+              "topThreeThings": true,
               "vaccinations": true,
             }
           }
@@ -289,26 +271,6 @@ exports[`Component <PatientsSummary /> should renders with all props correctly 1
               srcPrevirew="/images/patients-summary/medications.jpg"
               state="medications"
               title="Medications"
-            />
-            <SimpleDashboardPanel
-              goToState={[Function]}
-              isFeeds={false}
-              isHasList={true}
-              isHasPreview={false}
-              items={
-                Array [
-                  Object {
-                    "text": "Loading ...",
-                  },
-                  "",
-                  "",
-                  "",
-                ]
-              }
-              key="4"
-              srcPrevirew="/images/patients-summary/vaccinations.jpg"
-              state="vaccinations"
-              title="Vaccinations"
             />
           </div>
         </div>

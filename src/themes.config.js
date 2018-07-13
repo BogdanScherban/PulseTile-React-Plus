@@ -16,9 +16,8 @@ const mainThemeConfigs = {
   patientsSummaryHasPreviewSettings: false,
 
   dashboardBeing: {
-    // Plugins were extracted and relocated to SILVER-plugins
-    // vaccinations: false,
-    // topThreeThings: false,
+    vaccinations: false,
+    topThreeThings: false,
   },
 };
 
