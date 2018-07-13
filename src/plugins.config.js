@@ -25,7 +25,7 @@ import procedures from './components/pages/Procedures/index';
 // import testResults from './components/pages/Results/index';
 // import topThreeThings from './components/pages/TopThreeThings/index';
 // import transfersOfCare from './components/pages/TransfersOfCare/index';
-// import vaccinations from './components/pages/Vaccinations/index';
+import vaccinations from './components/pages/Vaccinations/index';
 // import vitals from './components/pages/Vitals/index';
 
 // WERE REMOVED TO CARBON PLUGINS
@@ -59,7 +59,7 @@ export const plugins = [
   // topThreeThings,
   // transfersOfCare,
   // testResults,
-  // vaccinations,
+  vaccinations,
   // vitals,
 
   // WERE REMOVED TO CARBON PLUGINS

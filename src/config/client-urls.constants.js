@@ -28,7 +28,7 @@ export const clientUrls = {
   // REFERRALS: 'referrals',
   // TOP_THREE_THINGS: 'topThreeThings',
   // TRANSFERS_OF_CARE: 'transfer-of-care',
-  // VACCINATIONS: 'vaccinations',
+  VACCINATIONS: 'vaccinations',
   // VITALS: 'vitals',
 
   // These plugins were extracted and relocated to BRONZE
@@ -154,12 +154,12 @@ const pluginsPages = {
   //     state: '/transfers-of-care',
   //   }],
   // },
-  // 'vaccinations': {
-  //   breadcrumbs: [{
-  //     title: 'Vaccinations',
-  //     state: '/vaccinations',
-  //   }],
-  // },
+  'vaccinations': {
+    breadcrumbs: [{
+      title: 'Vaccinations',
+      state: '/vaccinations',
+    }],
+  },
   // 'vitals': {
   //   breadcrumbs: [{
   //     title: 'Vitals - NEWS',

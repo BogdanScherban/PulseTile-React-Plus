@@ -57,20 +57,20 @@ const patientMedicationsSelector = createSelector(
   }
 );
 
-// Plugin Vaccinations wer3e extracted from the main repository and located in Silver-plugins
-// const patientVaccinationsSelector = createSelector(
-//   ({ patientsVaccinations }) => patientsVaccinations,
-//   (state, props) => _.getOr(null, 'match.params.userId', props),
-//   (patientsVaccinations, userId) => {
-//     let vaccinations = {};
-//     if (patientsVaccinations[userId]) {
-//       vaccinations = patientsVaccinations[userId];
-//     } else {
-//       vaccinations = [{text: 'Loading ...'}, '', '', ''];
-//     }
-//     return vaccinations;
-//   }
-// );
+const patientVaccinationsSelector = createSelector(
+  ({ patientsVaccinations }) => patientsVaccinations,
+  (state, props) => _.getOr(null, 'match.params.userId', props),
+  (patientsVaccinations, userId) => {
+    let vaccinations = {};
+    if (patientsVaccinations[userId]) {
+      vaccinations = patientsVaccinations[userId];
+    } else {
+      vaccinations = [{text: 'Loading ...'}, '', '', ''];
+    }
+    return vaccinations;
+  }
+);
+
 // const patientTopThreeThingsSelector = createSelector(
 //   ({ patientsTopThreeThings }) => patientsTopThreeThings,
 //   (state, props) => _.getOr(null, 'match.params.userId', props),
@@ -85,14 +85,14 @@ const patientMedicationsSelector = createSelector(
 //   }
 // );
 
-export const summarySynopsisSelector  = createSelector(
+export const summarySynopsisSelector = createSelector(
   patientProblemsSelector,
   patientContactsSelector,
   patientAllergiesSelector,
   patientMedicationsSelector,
 
   // Plugins were extracted and relocated to SILVER-plugins
-  // patientVaccinationsSelector,
+  patientVaccinationsSelector,
   // patientTopThreeThingsSelector,
 
   (
@@ -102,7 +102,7 @@ export const summarySynopsisSelector  = createSelector(
     medications,
 
     // Plugins were extracted and relocated to SILVER-plugins
-    // vaccinations,
+    vaccinations,
     // topThree
 
   ) => {
@@ -114,7 +114,7 @@ export const summarySynopsisSelector  = createSelector(
         medications: medications,
 
         // Plugins were extracted and relocated to SILVER-plugins
-        // vaccinations: vaccinations,
+        vaccinations: vaccinations,
         // topThreeThings: topThree,
       }
     };

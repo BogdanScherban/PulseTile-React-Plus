@@ -83,6 +83,21 @@ exports[`Component <PatientsSummaryPanel /> should renders with all props correc
             type="checkbox"
           />
         </Col>
+        <Col
+          bsClass="col"
+          componentClass="div"
+          key="vaccinations"
+          sm={4}
+          xs={6}
+        >
+          <PTCustomInput
+            id="vaccinations"
+            name="vaccinations"
+            onChange={[Function]}
+            title="Vaccinations"
+            type="checkbox"
+          />
+        </Col>
       </Row>
     </div>
   </div>
@@ -169,6 +184,21 @@ exports[`Component <PatientsSummaryPanel /> should renders with all props correc
             name="medications"
             onChange={[Function]}
             title="Medications"
+            type="checkbox"
+          />
+        </Col>
+        <Col
+          bsClass="col"
+          componentClass="div"
+          key="vaccinations"
+          sm={4}
+          xs={6}
+        >
+          <PTCustomInput
+            id="vaccinations"
+            name="vaccinations"
+            onChange={[Function]}
+            title="Vaccinations"
             type="checkbox"
           />
         </Col>
