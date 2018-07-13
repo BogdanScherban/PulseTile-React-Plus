@@ -12,7 +12,7 @@ import proms from './components/pages/PROMs/index';
 // import feeds from './components/pages/Feeds/index';
 
 // WERE REMOVED TO SILVER PLUGINS
-// import clinicalNotes from './components/pages/ClinicalNotes/index';
+import clinicalNotes from './components/pages/ClinicalNotes/index';
 // import clinicalStatements from './components/pages/ClinicalStatements/index';
 // import documents from './components/pages/Documents/index';
 // import drawings from './components/pages/Drawings/index';
@@ -46,7 +46,7 @@ export const plugins = [
   // feeds,
 
   // WERE REMOVED TO SILVER PLUGINS
-  // clinicalNotes,
+  clinicalNotes,
   // clinicalStatements,
   // documents,
   // drawings,

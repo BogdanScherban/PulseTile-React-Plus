@@ -131,8 +131,8 @@ export const fetchPatientDiaryEntryDetailOnMount = (generateFetchDetailOnMount('
 
 // FOR SILVER PLUGINS
 // Clinical Notes
-// export const fetchPatientClinicalNotesOnMount = (generateFetchListOnMount('fetchPatientClinicalNotesRequest'));
-// export const fetchPatientClinicalNotesDetailOnMount = (generateFetchDetailOnMount('fetchPatientClinicalNotesDetailRequest'));
+export const fetchPatientClinicalNotesOnMount = (generateFetchListOnMount('fetchPatientClinicalNotesRequest'));
+export const fetchPatientClinicalNotesDetailOnMount = (generateFetchDetailOnMount('fetchPatientClinicalNotesDetailRequest'));
 
 // Clinical Statements
 // export const fetchPatientClinicalStatementsOnMount = (generateFetchListOnMount('fetchPatientClinicalStatementsRequest'));
