@@ -22,7 +22,7 @@ export const clientUrls = {
   // EVENTS: 'events',
   MDTS: 'mdt',
   ORDERS: 'orders',
-  // PERSONAL_NOTES: 'personalNotes',
+  PERSONAL_NOTES: 'personalNotes',
   PROCEDURES: 'procedures',
   // RESULTS: 'results',
   // REFERRALS: 'referrals',
@@ -118,12 +118,12 @@ const pluginsPages = {
       state: '/orders',
     }],
   },
-  // 'personalNotes': {
-  //   breadcrumbs: [{
-  //     title: 'Personal Notes',
-  //     state: '/personalNotes',
-  //   }],
-  // },
+  'personalNotes': {
+    breadcrumbs: [{
+      title: 'Personal Notes',
+      state: '/personalNotes',
+    }],
+  },
   // 'referrals': {
   //   breadcrumbs: [{
   //     title: 'Referrals',
