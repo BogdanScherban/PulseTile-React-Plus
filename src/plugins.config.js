@@ -22,7 +22,7 @@ import orders from './components/pages/Orders/index';
 import personalNotes from './components/pages/PersonalNotes/index';
 import procedures from './components/pages/Procedures/index';
 // import referrals from './components/pages/Referrals/index';
-// import testResults from './components/pages/Results/index';
+import testResults from './components/pages/Results/index';
 import topThreeThings from './components/pages/TopThreeThings/index';
 import transfersOfCare from './components/pages/TransfersOfCare/index';
 import vaccinations from './components/pages/Vaccinations/index';
@@ -58,7 +58,7 @@ export const plugins = [
   // referrals,
   topThreeThings,
   transfersOfCare,
-  // testResults,
+  testResults,
   vaccinations,
   // vitals,
 

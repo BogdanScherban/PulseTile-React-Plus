@@ -20,8 +20,8 @@ export const patientsColumnsConfig = [
 
   // For SILVER-plugins
   // Result (Test Result)
-  // { key: 'resultsDate', title: 'Results', icon: <CalendarIcon />, transformer: getDDMMMYYYY, width: 110 },
-  // { key: 'resultsCount', title: 'Results ', icon: <span>#</span>, width: 100 },
+  { key: 'resultsDate', title: 'Results', icon: <CalendarIcon />, transformer: getDDMMMYYYY, width: 110 },
+  { key: 'resultsCount', title: 'Results ', icon: <span>#</span>, width: 100 },
   // Vitals
   // { key: 'vitalsDate', title: 'Vitals', icon: <CalendarIcon />, transformer: getDDMMMYYYY, width: 110 },
   // { key: 'vitalsCount', title: 'Vitals ', icon: <span>#</span>, width: 100 },
@@ -43,8 +43,8 @@ export const defaultColumnsSelected = {
   promsDate: false,
 
   // For plugin Result (Test Result)
-  // resultsDate: true,
-  // resultsCount: true,
+  resultsDate: true,
+  resultsCount: true,
   // vitalsDate: false,
   // vitalsCount: false,
 };

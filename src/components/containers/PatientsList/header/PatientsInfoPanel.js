@@ -69,7 +69,7 @@ export default class PatientsInfoPanel extends PureComponent {
                 <PTCustomCheckbox title="Orders" name="ordersDate" isChecked={selected.ordersDate} onChange={this.toggleCheckbox} />
 
                 {/* For SILVER-plugins */}
-                {/*<PTCustomCheckbox title="Results" name="resultsDate" isChecked={selected.resultsDate} onChange={this.toggleCheckbox} />*/}
+                <PTCustomCheckbox title="Results" name="resultsDate" isChecked={selected.resultsDate} onChange={this.toggleCheckbox} />
                 {/*<PTCustomCheckbox title="Vitals" name="vitalsDate" isChecked={selected.vitalsDate} onChange={this.toggleCheckbox} />*/}
 
                 <PTCustomCheckbox title="Diagnosis" name="diagnosesDate" isChecked={selected.diagnosesDate} onChange={this.toggleCheckbox} />
@@ -89,7 +89,7 @@ export default class PatientsInfoPanel extends PureComponent {
                 <PTCustomCheckbox title="Orders" name="ordersCount" isChecked={selected.ordersCount} onChange={this.toggleCheckbox} />
 
                 {/* For SILVER-plugins */}
-                {/*<PTCustomCheckbox title="Results" name="resultsCount" isChecked={selected.resultsCount} onChange={this.toggleCheckbox} />*/}
+                <PTCustomCheckbox title="Results" name="resultsCount" isChecked={selected.resultsCount} onChange={this.toggleCheckbox} />
                 {/*<PTCustomCheckbox title="Vitals" name="vitalsCount" isChecked={selected.vitalsCount} onChange={this.toggleCheckbox} />*/}
 
                 <PTCustomCheckbox title="Diagnosis" name="diagnosesCount" isChecked={selected.diagnosesCount} onChange={this.toggleCheckbox} />

@@ -24,7 +24,7 @@ export const clientUrls = {
   ORDERS: 'orders',
   PERSONAL_NOTES: 'personalNotes',
   PROCEDURES: 'procedures',
-  // RESULTS: 'results',
+  RESULTS: 'results',
   // REFERRALS: 'referrals',
   TOP_THREE_THINGS: 'topThreeThings',
   TRANSFERS_OF_CARE: 'transfer-of-care',
@@ -136,12 +136,12 @@ const pluginsPages = {
       state: '/procedures',
     }],
   },
-  // 'results': {
-  //   breadcrumbs: [{
-  //     title: 'Results',
-  //     state: '/results',
-  //   }],
-  // },
+  'results': {
+    breadcrumbs: [{
+      title: 'Results',
+      state: '/results',
+    }],
+  },
   'topThreeThings': {
     breadcrumbs: [{
       title: 'Top 3 Things',

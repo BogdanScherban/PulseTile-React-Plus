@@ -20,8 +20,9 @@ describe('Component <ViewPatientDropdownOptions />', () => {
 
     // For Vitals-plugin
     // viewPatientDropdownOptions.find('.dropdown-menu-item').at(2).simulate('click');
+
     // For Results (Test Results) plugin
-    // viewPatientDropdownOptions.find('.dropdown-menu-item').at(3).simulate('click');
+    viewPatientDropdownOptions.find('.dropdown-menu-item').at(2).simulate('click');
 
     expect(viewPatientDropdownOptions).toMatchSnapshot();
   });
