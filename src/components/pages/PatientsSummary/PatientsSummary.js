@@ -23,7 +23,7 @@ import {
   fetchPatientMedicationsSynopsisOnMount,
   fetchPatientVaccinationsSynopsisOnMount,
   fetchPatientTopThreeThingsSynopsisOnMount,
-  // fetchFeedsOnMount
+  fetchFeedsOnMount
 } from '../../../utils/HOCs/fetch-patients.utils';
 
 import { dashboardVisible, dashboardBeing } from '../../../plugins.config';
@@ -33,48 +33,39 @@ import { testConstants, isDevMode } from '../../../config/for-test.constants';
 // Plugins were commented because of plugins were extracted from the main repository
 import { fetchPatientTopThreeThingsSynopsisRequest } from '../TopThreeThings/ducks/fetch-patient-top-three-things.duck';
 import { fetchPatientVaccinationsSynopsisRequest } from '../Vaccinations/ducks/fetch-patient-vaccinations.duck';
-// import { fetchFeedsRequest } from '../Feeds/ducks/fetch-feeds.duck';
-// import { feedsSelector } from '../Feeds/selectors';
-// import RssDashboardPanel from '../Feeds/RssDashboardPanel';
+import { fetchFeedsRequest } from '../Feeds/ducks/fetch-feeds.duck';
+import { feedsSelector } from '../Feeds/selectors';
+import RssDashboardPanel from '../Feeds/RssDashboardPanel';
 
 const mapDispatchToProps = dispatch => ({
   actions: bindActionCreators({
-
       fetchPatientDiagnosesSynopsisRequest,
       fetchPatientContactsSynopsisRequest,
       fetchPatientAllergiesSynopsisRequest,
       fetchPatientMedicationsSynopsisRequest,
-
-      // Plugins were commented because of plugins were extracted from the main repository
       fetchPatientVaccinationsSynopsisRequest,
       fetchPatientTopThreeThingsSynopsisRequest,
-      // fetchFeedsRequest
+      fetchFeedsRequest
 
   }, dispatch) });
 
 @connect(summarySynopsisSelector, mapDispatchToProps)
-
-// Plugins were commented because of plugins were extracted from the main repository
-// @connect(feedsSelector, mapDispatchToProps)
+@connect(feedsSelector, mapDispatchToProps)
 
 @compose(
   lifecycle(fetchPatientProblemsSynopsisOnMount),
   lifecycle(fetchPatientContactsSynopsisOnMount),
   lifecycle(fetchPatientAllergiesSynopsisOnMount),
   lifecycle(fetchPatientMedicationsSynopsisOnMount),
-
-  // Plugins were commented because of plugins were extracted from the main repository
   lifecycle(fetchPatientVaccinationsSynopsisOnMount),
   lifecycle(fetchPatientTopThreeThingsSynopsisOnMount),
-  // lifecycle(fetchFeedsOnMount)
+  lifecycle(fetchFeedsOnMount)
 )
 
 export default class PatientsSummary extends PureComponent {
   static propTypes = {
     boards: PropTypes.shape({}).isRequired,
-
-    // For Feeds-plugin
-    // feeds: PropTypes.array.isRequired,
+    feeds: PropTypes.array.isRequired,
   };
 
   static contextTypes = {
@@ -105,7 +96,7 @@ export default class PatientsSummary extends PureComponent {
     const { actions } = this.props;
 
     // Fro Feeds-plugin
-    // themeConfigs.isLeedsPHRTheme ? actions.fetchFeedsRequest() : null;
+    themeConfigs.isLeedsPHRTheme ? actions.fetchFeedsRequest() : null;
   }
 
   getDefaultCategorySelected = () => {
@@ -184,23 +175,22 @@ export default class PatientsSummary extends PureComponent {
                     : null)
                 })}
 
-                {/* For Feeds-plugin */}
-                {/*{themeConfigs.isLeedsPHRTheme ? feeds.map((item) => {*/}
-                  {/*const nameItem = getNameFromUrl(item.landingPageUrl);*/}
-                  {/*const isShow = ('true' == localStorage.getItem('isShow_'+nameItem));*/}
-                  {/*return (isShow ?*/}
-                    {/*<RssDashboardPanel*/}
-                      {/*key={nameItem}*/}
-                      {/*title={item.name}*/}
-                      {/*state={item.landingPageUrl}*/}
-                      {/*goToState={this.handleGoToState}*/}
-                      {/*rssFeedName={nameItem}*/}
-                      {/*rssFeedUrl={item.rssFeedUrl}*/}
-                      {/*isHasPreview={isHasPreview}*/}
-                      {/*isHasList={isHasList}*/}
-                    {/*/>*/}
-                    {/*: null)*/}
-                {/*}) : null}*/}
+                {themeConfigs.isLeedsPHRTheme ? feeds.map((item) => {
+                  const nameItem = getNameFromUrl(item.landingPageUrl);
+                  const isShow = ('true' == localStorage.getItem('isShow_'+nameItem));
+                  return (isShow ?
+                    <RssDashboardPanel
+                      key={nameItem}
+                      title={item.name}
+                      state={item.landingPageUrl}
+                      goToState={this.handleGoToState}
+                      rssFeedName={nameItem}
+                      rssFeedUrl={item.rssFeedUrl}
+                      isHasPreview={isHasPreview}
+                      isHasList={isHasList}
+                    />
+                    : null)
+                }) : null}
 
               </div>
             </div>

@@ -88,10 +88,10 @@ export default class UserAccountPanelSettings extends PureComponent {
               ><span className="dropdown-menu-item-text">Change History</span></div>
 
               {/* For Feeds-plugin */}
-              {/*<div*/}
-                {/*className={classNames('dropdown-menu-item', { 'active': userProfileTabs.openedPanel === FEEDS })}*/}
-                {/*onClick={this.handleClickMenuItem(FEEDS)}*/}
-              {/*><span className="dropdown-menu-item-text">Feeds</span></div>*/}
+              <div
+                className={classNames('dropdown-menu-item', { 'active': userProfileTabs.openedPanel === FEEDS })}
+                onClick={this.handleClickMenuItem(FEEDS)}
+              ><span className="dropdown-menu-item-text">Feeds</span></div>
 
             </div>
           </div>

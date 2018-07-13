@@ -74,29 +74,29 @@ export default class PatientsSummaryPanel extends PureComponent {
           </div>
 
           {/* For Feeds-plugin */}
-          {/*{themeConfigs.isLeedsPHRTheme ?*/}
-            {/*<div>*/}
-              {/*<div className="heading">FEEDS</div>*/}
-              {/*<div className="form-group">*/}
-                {/*<Row>*/}
-                  {/*{feeds.map((item) => {*/}
-                    {/*const nameItem = getNameFromUrl(item.landingPageUrl);*/}
-                    {/*const isChecked = ('true' == localStorage.getItem('isShow_'+nameItem));*/}
-                    {/*return (*/}
-                      {/*<Col xs={6} sm={4} key={nameItem}>*/}
-                        {/*<PTCustomInput*/}
-                          {/*type="checkbox"*/}
-                          {/*title={item.name}*/}
-                          {/*id={nameItem}*/}
-                          {/*name={nameItem}*/}
-                          {/*isChecked={isChecked}*/}
-                          {/*onChange={this.toggleCheckbox}*/}
-                        {/*/>*/}
-                      {/*</Col>)*/}
-                  {/*})}*/}
-                {/*</Row>*/}
-              {/*</div>*/}
-            {/*</div> : null }*/}
+          {themeConfigs.isLeedsPHRTheme ?
+            <div>
+              <div className="heading">FEEDS</div>
+              <div className="form-group">
+                <Row>
+                  {feeds.map((item) => {
+                    const nameItem = getNameFromUrl(item.landingPageUrl);
+                    const isChecked = ('true' == localStorage.getItem('isShow_'+nameItem));
+                    return (
+                      <Col xs={6} sm={4} key={nameItem}>
+                        <PTCustomInput
+                          type="checkbox"
+                          title={item.name}
+                          id={nameItem}
+                          name={nameItem}
+                          isChecked={isChecked}
+                          onChange={this.toggleCheckbox}
+                        />
+                      </Col>)
+                  })}
+                </Row>
+              </div>
+            </div> : null }
 
           {(themeConfigs.patientsSummaryHasPreviewSettings || patientsSummaryHasPreviewSettings) ?
             <div>

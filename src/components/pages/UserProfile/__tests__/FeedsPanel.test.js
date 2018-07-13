@@ -35,10 +35,10 @@ describe('Component <FeedsPanel />', () => {
     );
 
     // For Feeds-plugin
-    // expect(component.find('ControlPanel')).toHaveLength(1);
-    // expect(component.find('ControlPanel').props().title).toEqual('Feeds');
-    // expect(component.find('ControlPanel').props().name).toEqual('feeds');
-    // expect(component).toMatchSnapshot();
+    expect(component.find('ControlPanel')).toHaveLength(1);
+    expect(component.find('ControlPanel').props().title).toEqual('Feeds');
+    expect(component.find('ControlPanel').props().name).toEqual('feeds');
+    expect(component).toMatchSnapshot();
   });
 });
 

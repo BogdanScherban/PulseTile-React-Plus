@@ -31,11 +31,11 @@ export const clientUrls = {
   VACCINATIONS: 'vaccinations',
   VITALS: 'vitals',
 
-  // These plugins were extracted and relocated to BRONZE
+  // BRONZE plugins
   PROMS: 'proms',
   GENERIC_PLUGIN: 'genericPlugin',
   DIARY_ENTRY: 'diaryEntry',
-  // FEEDS: 'feeds',
+  FEEDS: 'feeds',
 
   // CARBON PLUGINS
   IMAGES: 'images',
