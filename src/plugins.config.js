@@ -6,7 +6,7 @@ import allergies from './components/pages/Allergies/index';
 import contacts from './components/pages/Contacts/index';
 
 // WERE REMOVED TO BRONZE PLUGINS
-// import diaryEntry from './components/pages/DiaryEntry/index';
+import diaryEntry from './components/pages/DiaryEntry/index';
 // import genericPlugin from './components/pages/GenericPlugin/index';
 import proms from './components/pages/PROMs/index';
 // import feeds from './components/pages/Feeds/index';
@@ -40,7 +40,7 @@ export const plugins = [
   contacts,
 
   // WERE REMOVED TO BRONZE PLUGINS
-  // diaryEntry,
+  diaryEntry,
   // genericPlugin,
   proms,
   // feeds,

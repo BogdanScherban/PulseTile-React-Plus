@@ -9,6 +9,10 @@ exports[`Component <TextareaWithButton /> should renders with all props correctl
       test
     </button>
   </div>
-  <Field />
+  <Field
+    id="noteType"
+    label="Type"
+    name="noteType"
+  />
 </div>
 `;

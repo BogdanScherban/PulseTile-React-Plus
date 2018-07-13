@@ -110,8 +110,8 @@ export const fetchSeriesOnMount = ({
 // export const fetchPatientGenericPluginDetailOnMount = (generateFetchDetailOnMount('fetchPatientGenericPluginDetailRequest'));
 
 // DiaryEntry
-// export const fetchPatientDiaryEntryOnMount = (generateFetchListOnMount('fetchPatientDiaryEntryRequest'));
-// export const fetchPatientDiaryEntryDetailOnMount = (generateFetchDetailOnMount('fetchPatientDiaryEntryDetailRequest'));
+export const fetchPatientDiaryEntryOnMount = (generateFetchListOnMount('fetchPatientDiaryEntryRequest'));
+export const fetchPatientDiaryEntryDetailOnMount = (generateFetchDetailOnMount('fetchPatientDiaryEntryDetailRequest'));
 
 // Feeds
 // export const fetchFeedsOnMount = ({
