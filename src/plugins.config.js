@@ -26,7 +26,7 @@ import testResults from './components/pages/Results/index';
 import topThreeThings from './components/pages/TopThreeThings/index';
 import transfersOfCare from './components/pages/TransfersOfCare/index';
 import vaccinations from './components/pages/Vaccinations/index';
-// import vitals from './components/pages/Vitals/index';
+import vitals from './components/pages/Vitals/index';
 
 // CARBON PLUGINS
 import images from './components/pages/Images/index';
@@ -60,7 +60,7 @@ export const plugins = [
   transfersOfCare,
   testResults,
   vaccinations,
-  // vitals,
+  vitals,
 
   // CARBON PLUGINS
   images,

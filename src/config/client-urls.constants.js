@@ -14,7 +14,7 @@ export const clientUrls = {
   CONTACTS: 'contacts',
   MEDICATIONS: 'medications',
 
-  // These plugins were extracted and relocated to SILVER
+  // SILVER PLUGINS
   CLINICAL_NOTES: 'clinicalNotes',
   CLINICAL_STATEMENTS: 'clinicalStatements',
   DOCUMENTS: 'documents',
@@ -29,7 +29,7 @@ export const clientUrls = {
   TOP_THREE_THINGS: 'topThreeThings',
   TRANSFERS_OF_CARE: 'transfer-of-care',
   VACCINATIONS: 'vaccinations',
-  // VITALS: 'vitals',
+  VITALS: 'vitals',
 
   // These plugins were extracted and relocated to BRONZE
   PROMS: 'proms',
@@ -75,7 +75,7 @@ const pluginsPages = {
       }],
   },
 
-  // These plugins were extracted and relocated to SILVER
+  // SILVER PLUGINS
   'clinicalNotes': {
     breadcrumbs: [{
       title: 'Clinical Notes',
@@ -160,12 +160,12 @@ const pluginsPages = {
       state: '/vaccinations',
     }],
   },
-  // 'vitals': {
-  //   breadcrumbs: [{
-  //     title: 'Vitals - NEWS',
-  //     state: '/vitals',
-  //   }],
-  // },
+  'vitals': {
+    breadcrumbs: [{
+      title: 'Vitals - NEWS',
+      state: '/vitals',
+    }],
+  },
 
   // These plugins were extracted and relocated to BRONZE
   'proms': {

@@ -23,8 +23,8 @@ export const patientsColumnsConfig = [
   { key: 'resultsDate', title: 'Results', icon: <CalendarIcon />, transformer: getDDMMMYYYY, width: 110 },
   { key: 'resultsCount', title: 'Results ', icon: <span>#</span>, width: 100 },
   // Vitals
-  // { key: 'vitalsDate', title: 'Vitals', icon: <CalendarIcon />, transformer: getDDMMMYYYY, width: 110 },
-  // { key: 'vitalsCount', title: 'Vitals ', icon: <span>#</span>, width: 100 },
+  { key: 'vitalsDate', title: 'Vitals', icon: <CalendarIcon />, transformer: getDDMMMYYYY, width: 110 },
+  { key: 'vitalsCount', title: 'Vitals ', icon: <span>#</span>, width: 100 },
 ];
 
 export const defaultColumnsSelected = {
@@ -45,6 +45,6 @@ export const defaultColumnsSelected = {
   // For plugin Result (Test Result)
   resultsDate: true,
   resultsCount: true,
-  // vitalsDate: false,
-  // vitalsCount: false,
+  vitalsDate: false,
+  vitalsCount: false,
 };

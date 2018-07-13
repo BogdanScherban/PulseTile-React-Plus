@@ -97,6 +97,12 @@ exports[`Component <PatientsInfoPanel /> should renders correctly shallow 1`] = 
           />
           <PTCustomCheckbox
             isChecked={true}
+            name="vitalsDate"
+            onChange={[Function]}
+            title="Vitals"
+          />
+          <PTCustomCheckbox
+            isChecked={true}
             name="diagnosesDate"
             onChange={[Function]}
             title="Diagnosis"
@@ -151,6 +157,12 @@ exports[`Component <PatientsInfoPanel /> should renders correctly shallow 1`] = 
             name="resultsCount"
             onChange={[Function]}
             title="Results"
+          />
+          <PTCustomCheckbox
+            isChecked={false}
+            name="vitalsCount"
+            onChange={[Function]}
+            title="Vitals"
           />
           <PTCustomCheckbox
             isChecked={false}

@@ -14,13 +14,13 @@ import { fetchPatientDiagnosesRequest } from '../../pages/Diagnosis/ducks/fetch-
 import { patientDiagnosesSelector } from '../../pages/Diagnosis/selectors';
 import { patientMedicationsSelector } from '../../pages/Medications/selectors';
 
-// THESE PLUGINS WERE EXTRACTED FROM MAIN AND RELOCATED TO SILVER-PLUGINS
+// SILVER-PLUGINS
 // Events
 import { fetchPatientEventsRequest } from '../../pages/Events/ducks/fetch-patient-events.duck';
 import { patientEventsSelector } from '../../pages/Events/selectors';
 // Vitals
-// import { fetchPatientVitalsRequest } from '../../pages/Vitals/ducks/fetch-patient-vitals.duck';
-// import { patientVitalsSelector } from '../../pages/Vitals/selectors';
+import { fetchPatientVitalsRequest } from '../../pages/Vitals/ducks/fetch-patient-vitals.duck';
+import { patientVitalsSelector } from '../../pages/Vitals/selectors';
 // Referrals
 import { fetchPatientReferralsRequest } from '../../pages/Referrals/ducks/fetch-patient-referrals.duck';
 import { patientReferralsSelector } from '../../pages/Referrals/selectors';
@@ -37,7 +37,7 @@ const mapDispatchToProps = dispatch => ({
     fetchPatientMedicationsRequest,
 
     // THESE PLUGINS WERE EXTRACTED FROM MAIN AND RELOCATED TO SILVER-PLUGINS.
-    // fetchPatientVitalsRequest,
+    fetchPatientVitalsRequest,
     fetchPatientEventsRequest,
     fetchPatientReferralsRequest,
     fetchPatientProceduresRequest,
@@ -48,7 +48,7 @@ const mapDispatchToProps = dispatch => ({
 @connect(patientMedicationsSelector)
 
 // THESE PLUGINS WERE EXTRACTED FROM MAIN AND RELOCATED TO SILVER-PLUGINS
-// @connect(patientVitalsSelector)
+@connect(patientVitalsSelector)
 @connect(patientEventsSelector)
 @connect(patientReferralsSelector)
 
@@ -88,13 +88,13 @@ export default class RecordsOfTable extends PureComponent {
       },
 
       // SILVER-PLUGINS
-      // vitals: {
-      //   title: 'Vitals',
-      //   fetchList: 'fetchPatientVitalsRequest',
-      //   stateName: 'allVitals',
-      //   setMethodName: 'setVitalsRecords',
-      //   records: null,
-      // },
+      vitals: {
+        title: 'Vitals',
+        fetchList: 'fetchPatientVitalsRequest',
+        stateName: 'allVitals',
+        setMethodName: 'setVitalsRecords',
+        records: null,
+      },
       events: {
         title: 'Events',
         fetchList: 'fetchPatientEventsRequest',

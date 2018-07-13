@@ -20,8 +20,8 @@ import { patientMedicationsDetailSelector } from '../../pages/Medications/select
 import { fetchPatientEventsDetailRequest } from '../../pages/Events/ducks/fetch-patient-events-detail.duck';
 import { patientEventsDetailSelector } from '../../pages/Events/selectors';
 // Vitals
-// import { fetchPatientVitalsDetailRequest } from '../../pages/Vitals/ducks/fetch-patient-vitals-detail.duck';
-// import { patientVitalsDetailSelector } from '../../pages/Vitals/selectors';
+import { fetchPatientVitalsDetailRequest } from '../../pages/Vitals/ducks/fetch-patient-vitals-detail.duck';
+import { patientVitalsDetailSelector } from '../../pages/Vitals/selectors';
 // Referrals
 import { fetchPatientReferralsDetailRequest } from '../../pages/Referrals/ducks/fetch-patient-referrals-detail.duck';
 import { patientReferralsDetailSelector } from '../../pages/Referrals/selectors';
@@ -37,7 +37,7 @@ const mapDispatchToProps = dispatch => ({
     fetchPatientMedicationsDetailRequest,
 
     // SILVER-PLUGINS
-    // fetchPatientVitalsDetailRequest,
+    fetchPatientVitalsDetailRequest,
     fetchPatientProceduresDetailRequest,
     fetchPatientEventsDetailRequest,
     fetchPatientReferralsDetailRequest,
@@ -48,7 +48,7 @@ const mapDispatchToProps = dispatch => ({
 @connect(patientMedicationsDetailSelector)
 
 // SILVER-PLUGINS
-// @connect(patientVitalsDetailSelector)
+@connect(patientVitalsDetailSelector)
 @connect(patientEventsDetailSelector)
 @connect(patientProceduresDetailSelector)
 @connect(patientReferralsDetailSelector)
@@ -71,12 +71,12 @@ export default class RecordsOfTablePopover extends PureComponent {
         stateName: 'medicationDetail',
       },
 
-      // THESE PLUGINS WERE EXTRACTED FROM MAIN AND RELOCATED TO SILVER-PLUGINS
-      // vitals: {
-      //   title: 'Vitals',
-      //   fetchDetail: 'fetchPatientVitalsDetailRequest',
-      //   stateName: 'vitalDetail',
-      // },
+      // SILVER-PLUGINS
+      vitals: {
+        title: 'Vitals',
+        fetchDetail: 'fetchPatientVitalsDetailRequest',
+        stateName: 'vitalDetail',
+      },
       events: {
         title: 'Events',
         fetchDetail: 'fetchPatientEventsDetailRequest',

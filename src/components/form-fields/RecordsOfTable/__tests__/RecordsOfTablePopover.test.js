@@ -163,7 +163,7 @@ describe('Component <RecordsOfTablePopover />', () => {
       .dive()
       .dive() // For Procedures-plugin
       .dive() // For Events-plugin
-      // .dive() // For Vitals-plugin
+      .dive() // For Vitals-plugin
       .dive() // For Referrals-plugin
       .dive();
 
@@ -194,7 +194,7 @@ describe('Component <RecordsOfTablePopover />', () => {
       .dive()
       .dive() // For Procedures-plugin
       .dive() // For Events-plugin
-      // .dive() // For Vitals-plugin
+      .dive() // For Vitals-plugin
       .dive() // For Referrals-plugin
       .dive();
 
@@ -222,7 +222,7 @@ describe('Component <RecordsOfTablePopover />', () => {
       .dive()
       .dive() // For Procedures-plugin
       .dive() // For Events-plugin
-      // .dive() // For Vitals-plugin
+      .dive() // For Vitals-plugin
       .dive() // For Referrals-plugin
       .dive();
 
@@ -250,7 +250,7 @@ describe('Component <RecordsOfTablePopover />', () => {
       .dive()
       .dive() // For Procedures-plugin
       .dive() // For Events-plugin
-      // .dive() // For Vitals-plugin
+      .dive() // For Vitals-plugin
       .dive() // For Referrals-plugin
       .dive();
 
@@ -281,17 +281,17 @@ describe('Component <RecordsOfTablePopover />', () => {
       .dive()
       .dive() // For Procedures-plugin
       .dive() // For Events-plugin
-      // .dive() // For Vitals-plugin
+      .dive() // For Vitals-plugin
       .dive() // For Referrals-plugin
       .dive();
 
     expect(component.find('.record-popover')).toHaveLength(1);
 
     // For Vitals-plugin
-    // expect(component.find('.record-popover-title')).toHaveLength(1);
-    // expect(component.find('.record-popover-title').at(0).text()).toEqual('Vitals');
-    // expect(component.find('Spinner')).toHaveLength(0);
-    // expect(component.find('RecordsOfTablePopoverVitals')).toHaveLength(1);
+    expect(component.find('.record-popover-title')).toHaveLength(1);
+    expect(component.find('.record-popover-title').at(0).text()).toEqual('Vitals');
+    expect(component.find('Spinner')).toHaveLength(0);
+    expect(component.find('RecordsOfTablePopoverVitals')).toHaveLength(1);
 
     expect(component).toMatchSnapshot();
   });
@@ -311,7 +311,7 @@ describe('Component <RecordsOfTablePopover />', () => {
       .dive()
       .dive() // For Procedures-plugin
       .dive() // For Events-plugin
-      // .dive() // For Vitals-plugin
+      .dive() // For Vitals-plugin
       .dive() // For Referrals-plugin
       .dive();
 
@@ -342,7 +342,7 @@ describe('Component <RecordsOfTablePopover />', () => {
       .dive()
       .dive() // For Procedures-plugin
       .dive() // For Events-plugin
-      // .dive() // For Vitals-plugin
+      .dive() // For Vitals-plugin
       .dive() // For Referrals-plugin
       .dive();
 
@@ -365,7 +365,7 @@ describe('Component <RecordsOfTablePopover />', () => {
       .dive()
       .dive() // For Procedures-plugin
       .dive() // For Events-plugin
-      // .dive() // For Vitals-plugin
+      .dive() // For Vitals-plugin
       .dive() // For Referrals-plugin
       .dive();
 
