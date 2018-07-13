@@ -150,8 +150,8 @@ export const fetchPatientDocumentsOnMount = (generateFetchListOnMount('fetchPati
 export const fetchPatientDocumentsDetailOnMount = (generateFetchDetailOnMount('fetchPatientDocumentsDetailRequest'));
 
 // Drawings
-// export const fetchPatientDrawingsOnMount = (generateFetchListOnMount('fetchPatientDrawingsRequest'));
-// export const fetchPatientDrawingsDetailOnMount = (generateFetchDetailOnMount('fetchPatientDrawingsDetailRequest'));
+export const fetchPatientDrawingsOnMount = (generateFetchListOnMount('fetchPatientDrawingsRequest'));
+export const fetchPatientDrawingsDetailOnMount = (generateFetchDetailOnMount('fetchPatientDrawingsDetailRequest'));
 
 // Events
 // export const fetchPatientEventsOnMount = (generateFetchListOnMount('fetchPatientEventsRequest'));

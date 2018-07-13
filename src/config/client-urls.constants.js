@@ -94,12 +94,12 @@ const pluginsPages = {
       state: '/documents',
     }],
   },
-  // 'drawings': {
-  //   breadcrumbs: [{
-  //     title: 'Drawings',
-  //     state: '/drawings',
-  //   }],
-  // },
+  'drawings': {
+    breadcrumbs: [{
+      title: 'Drawings',
+      state: '/drawings',
+    }],
+  },
   // 'events': {
   //   breadcrumbs: [{
   //     title: 'Events',

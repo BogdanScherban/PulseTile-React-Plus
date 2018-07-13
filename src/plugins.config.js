@@ -15,7 +15,7 @@ import proms from './components/pages/PROMs/index';
 import clinicalNotes from './components/pages/ClinicalNotes/index';
 import clinicalStatements from './components/pages/ClinicalStatements/index';
 import documents from './components/pages/Documents/index';
-// import drawings from './components/pages/Drawings/index';
+import drawings from './components/pages/Drawings/index';
 // import events from './components/pages/Events/index';
 // import mdts from './components/pages/GenericMdt/index';
 // import orders from './components/pages/Orders/index';
@@ -49,7 +49,7 @@ export const plugins = [
   clinicalNotes,
   clinicalStatements,
   documents,
-  // drawings,
+  drawings,
   // events,
   // mdts,
   // orders,
