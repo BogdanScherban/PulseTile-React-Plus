@@ -186,19 +186,37 @@ exports[`Component <Header /> should renders correctly 1`] = `
       component={[Function]}
       exact={true}
       key="drawings"
-      path="/patients/:userId/undefined"
+      path="/patients/:userId/drawings"
     />
     <Route
       component={[Function]}
       exact={true}
       key="drawingsCreate"
-      path="/patients/:userId/undefined/create"
+      path="/patients/:userId/drawings/create"
     />
     <Route
       component={[Function]}
       exact={true}
       key="drawingsDetail"
-      path="/patients/:userId/undefined/:sourceId"
+      path="/patients/:userId/drawings/:sourceId"
+    />
+    <Route
+      component={[Function]}
+      exact={true}
+      key="mdts"
+      path="/patients/:userId/mdt"
+    />
+    <Route
+      component={[Function]}
+      exact={true}
+      key="mdtsCreate"
+      path="/patients/:userId/mdt/create"
+    />
+    <Route
+      component={[Function]}
+      exact={true}
+      key="mdtsDetail"
+      path="/patients/:userId/mdt/:sourceId"
     />
     <Route
       component={[Function]}

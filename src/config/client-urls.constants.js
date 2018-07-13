@@ -18,9 +18,9 @@ export const clientUrls = {
   CLINICAL_NOTES: 'clinicalNotes',
   CLINICAL_STATEMENTS: 'clinicalStatements',
   DOCUMENTS: 'documents',
-  // DRAWINGS: 'drawings',
+  DRAWINGS: 'drawings',
   // EVENTS: 'events',
-  // MDTS: 'mdt',
+  MDTS: 'mdt',
   // ORDERS: 'orders',
   // PERSONAL_NOTES: 'personalNotes',
   PROCEDURES: 'procedures',
@@ -106,12 +106,12 @@ const pluginsPages = {
   //     state: '/events',
   //   }],
   // },
-  // 'mdt': {
-  //   breadcrumbs: [{
-  //     title: 'Generic MDT',
-  //     state: '/mdt',
-  //   }],
-  // },
+  'mdt': {
+    breadcrumbs: [{
+      title: 'Generic MDT',
+      state: '/mdt',
+    }],
+  },
   // 'orders': {
   //   breadcrumbs: [{
   //     title: 'Orders',

@@ -17,7 +17,7 @@ import clinicalStatements from './components/pages/ClinicalStatements/index';
 import documents from './components/pages/Documents/index';
 import drawings from './components/pages/Drawings/index';
 // import events from './components/pages/Events/index';
-// import mdts from './components/pages/GenericMdt/index';
+import mdts from './components/pages/GenericMdt/index';
 // import orders from './components/pages/Orders/index';
 // import personalNotes from './components/pages/PersonalNotes/index';
 import procedures from './components/pages/Procedures/index';
@@ -51,7 +51,7 @@ export const plugins = [
   documents,
   drawings,
   // events,
-  // mdts,
+  mdts,
   // orders,
   // personalNotes,
   procedures,
