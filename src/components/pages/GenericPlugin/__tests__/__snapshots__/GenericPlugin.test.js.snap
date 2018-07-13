@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Component <DiaryEntry /> should renders correctly and testing another methods 1`] = `
+exports[`Component <GenericPlugin /> should renders correctly and testing another methods 1`] = `
 <section
   className="page-wrapper"
 >
@@ -21,21 +21,21 @@ exports[`Component <DiaryEntry /> should renders correctly and testing another m
           className="panel panel-primary"
         >
           <PluginListHeader
-            currentPanel="diaryEntriesMain"
+            currentPanel="genericPluginsMain"
             isBtnExpandVisible={false}
             isBtnTableVisible={true}
-            name="diaryEntriesMain"
+            name="genericPluginsMain"
             onExpand={[Function]}
             onFilterChange={[Function]}
-            panelTitle="Diary Entry List"
+            panelTitle="Generic Plugin List"
           />
           <PluginMainPanel
-            columnNameSortBy="noteType"
-            emptyDataMessage="No Diary Entry List"
+            columnNameSortBy="type"
+            emptyDataMessage="No Generic Plugin List"
             headers={
               Array [
                 Object {
-                  "key": "noteType",
+                  "key": "type",
                   "title": "Type",
                   "width": "23%",
                 },
@@ -72,7 +72,7 @@ exports[`Component <DiaryEntry /> should renders correctly and testing another m
             onHeaderCellClick={[Function]}
             setOffset={[Function]}
             sortingOrder="asc"
-            table="diaryEntries"
+            table="genericPlugins"
             totalEntriesAmount={0}
           />
         </div>
@@ -82,7 +82,7 @@ exports[`Component <DiaryEntry /> should renders correctly and testing another m
 </section>
 `;
 
-exports[`Component <DiaryEntry /> should renders correctly and testing context and lifecycle componentWillReceiveProps 1`] = `
+exports[`Component <GenericPlugin /> should renders correctly and testing context and lifecycle componentWillReceiveProps 1`] = `
 <section
   className="page-wrapper"
 >
@@ -103,21 +103,21 @@ exports[`Component <DiaryEntry /> should renders correctly and testing context a
           className="panel panel-primary"
         >
           <PluginListHeader
-            currentPanel="diaryEntriesMain"
+            currentPanel="genericPluginsMain"
             isBtnExpandVisible={true}
             isBtnTableVisible={true}
-            name="diaryEntriesMain"
+            name="genericPluginsMain"
             onExpand={[Function]}
             onFilterChange={[Function]}
-            panelTitle="Diary Entry List"
+            panelTitle="Generic Plugin List"
           />
           <PluginMainPanel
-            columnNameSortBy="noteType"
-            emptyDataMessage="No Diary Entry List"
+            columnNameSortBy="type"
+            emptyDataMessage="No Generic Plugin List"
             headers={
               Array [
                 Object {
-                  "key": "noteType",
+                  "key": "type",
                   "title": "Type",
                   "width": "23%",
                 },
@@ -155,7 +155,7 @@ exports[`Component <DiaryEntry /> should renders correctly and testing context a
             onHeaderCellClick={[Function]}
             setOffset={[Function]}
             sortingOrder="asc"
-            table="diaryEntries"
+            table="genericPlugins"
             totalEntriesAmount={0}
           />
         </div>
@@ -166,27 +166,27 @@ exports[`Component <DiaryEntry /> should renders correctly and testing context a
         componentClass="div"
         xs={12}
       >
-        <DiaryEntryDetail
-          currentPanel="diaryEntriesDetail"
+        <GenericPluginDetail
+          currentPanel="genericPluginsDetail"
           detail={
             Object {
               "author": "bob.smith@gmail.com",
               "dateCreated": 1510224834000,
-              "noteType": "Exam Report",
-              "notes": "11",
+              "note": "11",
               "source": "ethercis",
               "sourceId": "d6b4d397-779c-4a4e-b5eb-2084fb11876f",
+              "type": "11",
             }
           }
           editedPanel={Object {}}
           expandedPanel="all"
           isSubmit={false}
-          name="diaryEntriesDetail"
+          name="genericPluginsDetail"
           onCancel={[Function]}
           onEdit={[Function]}
           onExpand={[Function]}
           onSaveSettings={[Function]}
-          openedPanel="diaryEntriesCreate"
+          openedPanel="genericPluginsCreate"
         />
       </Col>
     </Row>
@@ -194,7 +194,171 @@ exports[`Component <DiaryEntry /> should renders correctly and testing context a
 </section>
 `;
 
-exports[`Component <DiaryEntry /> should renders correctly with diaryEntriesDetail and testing Create Panel 1`] = `
+exports[`Component <GenericPlugin /> should renders correctly with empty store 1`] = `
+<section
+  className="page-wrapper"
+>
+  <div
+    className="section"
+  >
+    <Row
+      bsClass="row"
+      componentClass="div"
+    >
+      <Col
+        bsClass="col"
+        className=""
+        componentClass="div"
+        xs={12}
+      >
+        <div
+          className="panel panel-primary"
+        >
+          <PluginListHeader
+            currentPanel="genericPluginsMain"
+            isBtnExpandVisible={false}
+            isBtnTableVisible={true}
+            name="genericPluginsMain"
+            onExpand={[Function]}
+            onFilterChange={[Function]}
+            panelTitle="Generic Plugin List"
+          />
+          <PluginMainPanel
+            columnNameSortBy="type"
+            emptyDataMessage="No Generic Plugin List"
+            headers={
+              Array [
+                Object {
+                  "key": "type",
+                  "title": "Type",
+                  "width": "23%",
+                },
+                Object {
+                  "key": "author",
+                  "title": "Author",
+                  "width": "33%",
+                },
+                Object {
+                  "key": "dateCreated",
+                  "title": "Date Created",
+                  "transformer": [Function],
+                  "width": "25%",
+                },
+                Object {
+                  "key": "source",
+                  "title": "Source",
+                  "width": "19%",
+                },
+                Object {
+                  "display": "none",
+                  "key": "sourceId",
+                  "title": "sourceId",
+                  "width": 0,
+                },
+              ]
+            }
+            isBtnCreateVisible={true}
+            isLoading={true}
+            listPerPageAmount={10}
+            offset={0}
+            onCellClick={[Function]}
+            onCreate={[Function]}
+            onHeaderCellClick={[Function]}
+            setOffset={[Function]}
+            sortingOrder="asc"
+            table="genericPlugins"
+            totalEntriesAmount={0}
+          />
+        </div>
+      </Col>
+    </Row>
+  </div>
+</section>
+`;
+
+exports[`Component <GenericPlugin /> should renders correctly with forms error 1`] = `
+<section
+  className="page-wrapper"
+>
+  <div
+    className="section"
+  >
+    <Row
+      bsClass="row"
+      componentClass="div"
+    >
+      <Col
+        bsClass="col"
+        className=""
+        componentClass="div"
+        xs={12}
+      >
+        <div
+          className="panel panel-primary"
+        >
+          <PluginListHeader
+            currentPanel="genericPluginsMain"
+            isBtnExpandVisible={false}
+            isBtnTableVisible={true}
+            name="genericPluginsMain"
+            onExpand={[Function]}
+            onFilterChange={[Function]}
+            panelTitle="Generic Plugin List"
+          />
+          <PluginMainPanel
+            columnNameSortBy="type"
+            emptyDataMessage="No Generic Plugin List"
+            headers={
+              Array [
+                Object {
+                  "key": "type",
+                  "title": "Type",
+                  "width": "23%",
+                },
+                Object {
+                  "key": "author",
+                  "title": "Author",
+                  "width": "33%",
+                },
+                Object {
+                  "key": "dateCreated",
+                  "title": "Date Created",
+                  "transformer": [Function],
+                  "width": "25%",
+                },
+                Object {
+                  "key": "source",
+                  "title": "Source",
+                  "width": "19%",
+                },
+                Object {
+                  "display": "none",
+                  "key": "sourceId",
+                  "title": "sourceId",
+                  "width": 0,
+                },
+              ]
+            }
+            isBtnCreateVisible={true}
+            isLoading={true}
+            listPerPageAmount={10}
+            offset={0}
+            onCellClick={[Function]}
+            onCreate={[Function]}
+            onHeaderCellClick={[Function]}
+            setOffset={[Function]}
+            sortingOrder="asc"
+            table="genericPlugins"
+            totalEntriesAmount={0}
+          />
+        </div>
+      </Col>
+    </Row>
+  </div>
+</section>
+`;
+
+exports[`Component <GenericPlugin /> should renders correctly with genericPluginsDetail and testing Create Panel 1`] = `
 <section
   className="page-wrapper"
 >
@@ -215,21 +379,21 @@ exports[`Component <DiaryEntry /> should renders correctly with diaryEntriesDeta
           className="panel panel-primary"
         >
           <PluginListHeader
-            currentPanel="diaryEntriesMain"
+            currentPanel="genericPluginsMain"
             isBtnExpandVisible={true}
             isBtnTableVisible={true}
-            name="diaryEntriesMain"
+            name="genericPluginsMain"
             onExpand={[Function]}
             onFilterChange={[Function]}
-            panelTitle="Diary Entry List"
+            panelTitle="Generic Plugin List"
           />
           <PluginMainPanel
-            columnNameSortBy="noteType"
-            emptyDataMessage="No Diary Entry List"
+            columnNameSortBy="type"
+            emptyDataMessage="No Generic Plugin List"
             headers={
               Array [
                 Object {
-                  "key": "noteType",
+                  "key": "type",
                   "title": "Type",
                   "width": "23%",
                 },
@@ -266,7 +430,7 @@ exports[`Component <DiaryEntry /> should renders correctly with diaryEntriesDeta
             onHeaderCellClick={[Function]}
             setOffset={[Function]}
             sortingOrder="asc"
-            table="diaryEntries"
+            table="genericPlugins"
             totalEntriesAmount={0}
           />
         </div>
@@ -279,20 +443,20 @@ exports[`Component <DiaryEntry /> should renders correctly with diaryEntriesDeta
       >
         <PluginCreate
           componentForm={
-            <Connect(ReduxForm)
+            <ReduxForm
               isSubmit={false}
             />
           }
-          currentPanel="diaryEntriesCreate"
+          currentPanel="genericPluginsCreate"
           expandedPanel="all"
           isCreatePanelVisible={true}
           isImport={false}
-          name="diaryEntriesCreate"
+          name="genericPluginsCreate"
           onCancel={[Function]}
           onExpand={[Function]}
           onSaveSettings={[Function]}
-          openedPanel="diaryEntriesCreate"
-          title="Create Diary Entry"
+          openedPanel="genericPluginsCreate"
+          title="Create Generic Plugin"
         />
       </Col>
     </Row>
@@ -300,7 +464,7 @@ exports[`Component <DiaryEntry /> should renders correctly with diaryEntriesDeta
 </section>
 `;
 
-exports[`Component <DiaryEntry /> should renders correctly with diaryEntriesDetail and testing Create Panel 2`] = `
+exports[`Component <GenericPlugin /> should renders correctly with genericPluginsDetail and testing Create Panel 2`] = `
 <section
   className="page-wrapper"
 >
@@ -321,21 +485,21 @@ exports[`Component <DiaryEntry /> should renders correctly with diaryEntriesDeta
           className="panel panel-primary"
         >
           <PluginListHeader
-            currentPanel="diaryEntriesMain"
+            currentPanel="genericPluginsMain"
             isBtnExpandVisible={true}
             isBtnTableVisible={true}
-            name="diaryEntriesMain"
+            name="genericPluginsMain"
             onExpand={[Function]}
             onFilterChange={[Function]}
-            panelTitle="Diary Entry List"
+            panelTitle="Generic Plugin List"
           />
           <PluginMainPanel
-            columnNameSortBy="noteType"
-            emptyDataMessage="No Diary Entry List"
+            columnNameSortBy="type"
+            emptyDataMessage="No Generic Plugin List"
             headers={
               Array [
                 Object {
-                  "key": "noteType",
+                  "key": "type",
                   "title": "Type",
                   "width": "23%",
                 },
@@ -372,7 +536,7 @@ exports[`Component <DiaryEntry /> should renders correctly with diaryEntriesDeta
             onHeaderCellClick={[Function]}
             setOffset={[Function]}
             sortingOrder="asc"
-            table="diaryEntries"
+            table="genericPlugins"
             totalEntriesAmount={0}
           />
         </div>
@@ -385,20 +549,20 @@ exports[`Component <DiaryEntry /> should renders correctly with diaryEntriesDeta
       >
         <PluginCreate
           componentForm={
-            <Connect(ReduxForm)
+            <ReduxForm
               isSubmit={false}
             />
           }
-          currentPanel="diaryEntriesCreate"
+          currentPanel="genericPluginsCreate"
           expandedPanel="all"
           isCreatePanelVisible={true}
           isImport={false}
-          name="diaryEntriesCreate"
+          name="genericPluginsCreate"
           onCancel={[Function]}
           onExpand={[Function]}
           onSaveSettings={[Function]}
-          openedPanel="diaryEntriesCreate"
-          title="Create Diary Entry"
+          openedPanel="genericPluginsCreate"
+          title="Create Generic Plugin"
         />
       </Col>
     </Row>
@@ -406,7 +570,7 @@ exports[`Component <DiaryEntry /> should renders correctly with diaryEntriesDeta
 </section>
 `;
 
-exports[`Component <DiaryEntry /> should renders correctly with diaryEntriesPanel and testing Detail Panel 1`] = `
+exports[`Component <GenericPlugin /> should renders correctly with genericPluginsPanel and testing Detail Panel 1`] = `
 <section
   className="page-wrapper"
 >
@@ -427,21 +591,21 @@ exports[`Component <DiaryEntry /> should renders correctly with diaryEntriesPane
           className="panel panel-primary"
         >
           <PluginListHeader
-            currentPanel="diaryEntriesMain"
+            currentPanel="genericPluginsMain"
             isBtnExpandVisible={true}
             isBtnTableVisible={true}
-            name="diaryEntriesMain"
+            name="genericPluginsMain"
             onExpand={[Function]}
             onFilterChange={[Function]}
-            panelTitle="Diary Entry List"
+            panelTitle="Generic Plugin List"
           />
           <PluginMainPanel
-            columnNameSortBy="noteType"
-            emptyDataMessage="No Diary Entry List"
+            columnNameSortBy="type"
+            emptyDataMessage="No Generic Plugin List"
             headers={
               Array [
                 Object {
-                  "key": "noteType",
+                  "key": "type",
                   "title": "Type",
                   "width": "23%",
                 },
@@ -479,7 +643,7 @@ exports[`Component <DiaryEntry /> should renders correctly with diaryEntriesPane
             onHeaderCellClick={[Function]}
             setOffset={[Function]}
             sortingOrder="asc"
-            table="diaryEntries"
+            table="genericPlugins"
             totalEntriesAmount={0}
           />
         </div>
@@ -490,27 +654,27 @@ exports[`Component <DiaryEntry /> should renders correctly with diaryEntriesPane
         componentClass="div"
         xs={12}
       >
-        <DiaryEntryDetail
-          currentPanel="diaryEntriesDetail"
+        <GenericPluginDetail
+          currentPanel="genericPluginsDetail"
           detail={
             Object {
               "author": "bob.smith@gmail.com",
               "dateCreated": 1510224834000,
-              "noteType": "Exam Report",
-              "notes": "11",
+              "note": "11",
               "source": "ethercis",
               "sourceId": "d6b4d397-779c-4a4e-b5eb-2084fb11876f",
+              "type": "11",
             }
           }
           editedPanel={Object {}}
           expandedPanel="all"
           isSubmit={false}
-          name="diaryEntriesDetail"
+          name="genericPluginsDetail"
           onCancel={[Function]}
           onEdit={[Function]}
           onExpand={[Function]}
           onSaveSettings={[Function]}
-          openedPanel="diaryEntriesPanel"
+          openedPanel="genericPluginsPanel"
         />
       </Col>
     </Row>
@@ -518,7 +682,7 @@ exports[`Component <DiaryEntry /> should renders correctly with diaryEntriesPane
 </section>
 `;
 
-exports[`Component <DiaryEntry /> should renders correctly with diaryEntriesPanel and testing Detail Panel 2`] = `
+exports[`Component <GenericPlugin /> should renders correctly with genericPluginsPanel and testing Detail Panel 2`] = `
 <section
   className="page-wrapper"
 >
@@ -535,27 +699,27 @@ exports[`Component <DiaryEntry /> should renders correctly with diaryEntriesPane
         componentClass="div"
         xs={12}
       >
-        <DiaryEntryDetail
-          currentPanel="diaryEntriesDetail"
+        <GenericPluginDetail
+          currentPanel="genericPluginsDetail"
           detail={
             Object {
               "author": "bob.smith@gmail.com",
               "dateCreated": 1510224834000,
-              "noteType": "Exam Report",
-              "notes": "11",
+              "note": "11",
               "source": "ethercis",
               "sourceId": "d6b4d397-779c-4a4e-b5eb-2084fb11876f",
+              "type": "11",
             }
           }
           editedPanel={Object {}}
-          expandedPanel="diaryEntriesPanel"
+          expandedPanel="genericPluginsPanel"
           isSubmit={false}
-          name="diaryEntriesDetail"
+          name="genericPluginsDetail"
           onCancel={[Function]}
           onEdit={[Function]}
           onExpand={[Function]}
           onSaveSettings={[Function]}
-          openedPanel="diaryEntriesPanel"
+          openedPanel="genericPluginsPanel"
         />
       </Col>
     </Row>
@@ -563,7 +727,7 @@ exports[`Component <DiaryEntry /> should renders correctly with diaryEntriesPane
 </section>
 `;
 
-exports[`Component <DiaryEntry /> should renders correctly with diaryEntriesPanel and testing Detail Panel 3`] = `
+exports[`Component <GenericPlugin /> should renders correctly with genericPluginsPanel and testing Detail Panel 3`] = `
 <section
   className="page-wrapper"
 >
@@ -574,170 +738,6 @@ exports[`Component <DiaryEntry /> should renders correctly with diaryEntriesPane
       bsClass="row"
       componentClass="div"
     />
-  </div>
-</section>
-`;
-
-exports[`Component <DiaryEntry /> should renders correctly with empty store 1`] = `
-<section
-  className="page-wrapper"
->
-  <div
-    className="section"
-  >
-    <Row
-      bsClass="row"
-      componentClass="div"
-    >
-      <Col
-        bsClass="col"
-        className=""
-        componentClass="div"
-        xs={12}
-      >
-        <div
-          className="panel panel-primary"
-        >
-          <PluginListHeader
-            currentPanel="diaryEntriesMain"
-            isBtnExpandVisible={false}
-            isBtnTableVisible={true}
-            name="diaryEntriesMain"
-            onExpand={[Function]}
-            onFilterChange={[Function]}
-            panelTitle="Diary Entry List"
-          />
-          <PluginMainPanel
-            columnNameSortBy="noteType"
-            emptyDataMessage="No Diary Entry List"
-            headers={
-              Array [
-                Object {
-                  "key": "noteType",
-                  "title": "Type",
-                  "width": "23%",
-                },
-                Object {
-                  "key": "author",
-                  "title": "Author",
-                  "width": "33%",
-                },
-                Object {
-                  "key": "dateCreated",
-                  "title": "Date Created",
-                  "transformer": [Function],
-                  "width": "25%",
-                },
-                Object {
-                  "key": "source",
-                  "title": "Source",
-                  "width": "19%",
-                },
-                Object {
-                  "display": "none",
-                  "key": "sourceId",
-                  "title": "sourceId",
-                  "width": 0,
-                },
-              ]
-            }
-            isBtnCreateVisible={true}
-            isLoading={true}
-            listPerPageAmount={10}
-            offset={0}
-            onCellClick={[Function]}
-            onCreate={[Function]}
-            onHeaderCellClick={[Function]}
-            setOffset={[Function]}
-            sortingOrder="asc"
-            table="diaryEntries"
-            totalEntriesAmount={0}
-          />
-        </div>
-      </Col>
-    </Row>
-  </div>
-</section>
-`;
-
-exports[`Component <DiaryEntry /> should renders correctly with forms error 1`] = `
-<section
-  className="page-wrapper"
->
-  <div
-    className="section"
-  >
-    <Row
-      bsClass="row"
-      componentClass="div"
-    >
-      <Col
-        bsClass="col"
-        className=""
-        componentClass="div"
-        xs={12}
-      >
-        <div
-          className="panel panel-primary"
-        >
-          <PluginListHeader
-            currentPanel="diaryEntriesMain"
-            isBtnExpandVisible={false}
-            isBtnTableVisible={true}
-            name="diaryEntriesMain"
-            onExpand={[Function]}
-            onFilterChange={[Function]}
-            panelTitle="Diary Entry List"
-          />
-          <PluginMainPanel
-            columnNameSortBy="noteType"
-            emptyDataMessage="No Diary Entry List"
-            headers={
-              Array [
-                Object {
-                  "key": "noteType",
-                  "title": "Type",
-                  "width": "23%",
-                },
-                Object {
-                  "key": "author",
-                  "title": "Author",
-                  "width": "33%",
-                },
-                Object {
-                  "key": "dateCreated",
-                  "title": "Date Created",
-                  "transformer": [Function],
-                  "width": "25%",
-                },
-                Object {
-                  "key": "source",
-                  "title": "Source",
-                  "width": "19%",
-                },
-                Object {
-                  "display": "none",
-                  "key": "sourceId",
-                  "title": "sourceId",
-                  "width": 0,
-                },
-              ]
-            }
-            isBtnCreateVisible={true}
-            isLoading={true}
-            listPerPageAmount={10}
-            offset={0}
-            onCellClick={[Function]}
-            onCreate={[Function]}
-            onHeaderCellClick={[Function]}
-            setOffset={[Function]}
-            sortingOrder="asc"
-            table="diaryEntries"
-            totalEntriesAmount={0}
-          />
-        </div>
-      </Col>
-    </Row>
   </div>
 </section>
 `;

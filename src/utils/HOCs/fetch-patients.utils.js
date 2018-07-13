@@ -105,9 +105,10 @@ export const fetchSeriesOnMount = ({
 // export const fetchPatientImagesOnMount = (generateFetchListOnMount('fetchPatientImagesRequest'));
 
 // FOR BRONZE PLUGINS
+
 // GenericPlugin
-// export const fetchPatientGenericPluginOnMount = (generateFetchListOnMount('fetchPatientGenericPluginRequest'));
-// export const fetchPatientGenericPluginDetailOnMount = (generateFetchDetailOnMount('fetchPatientGenericPluginDetailRequest'));
+export const fetchPatientGenericPluginOnMount = (generateFetchListOnMount('fetchPatientGenericPluginRequest'));
+export const fetchPatientGenericPluginDetailOnMount = (generateFetchDetailOnMount('fetchPatientGenericPluginDetailRequest'));
 
 // DiaryEntry
 export const fetchPatientDiaryEntryOnMount = (generateFetchListOnMount('fetchPatientDiaryEntryRequest'));

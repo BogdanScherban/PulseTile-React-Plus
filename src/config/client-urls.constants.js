@@ -33,8 +33,8 @@ export const clientUrls = {
 
   // These plugins were extracted and relocated to BRONZE
   PROMS: 'proms',
-  // GENERIC_PLUGIN: 'genericPlugin',
-  // DIARY_ENTRY: 'diaryEntry',
+  GENERIC_PLUGIN: 'genericPlugin',
+  DIARY_ENTRY: 'diaryEntry',
   // FEEDS: 'feeds',
 
   // These plugins were extracted and relocated to CARBON
@@ -174,18 +174,18 @@ const pluginsPages = {
   //     state: '/proms',
   //   }],
   // },
-  // 'genericPlugin': {
-  //   breadcrumbs: [{
-  //     title: 'Generic Plugin',
-  //     state: '/genericPlugin',
-  //   }],
-  // },
-  // 'diaryEntry': {
-  //   breadcrumbs: [{
-  //     title: 'Diary Entry',
-  //     state: '/diaryEntry',
-  //   }],
-  // },
+  'genericPlugin': {
+    breadcrumbs: [{
+      title: 'Generic Plugin',
+      state: '/genericPlugin',
+    }],
+  },
+  'diaryEntry': {
+    breadcrumbs: [{
+      title: 'Diary Entry',
+      state: '/diaryEntry',
+    }],
+  },
 };
 
 
