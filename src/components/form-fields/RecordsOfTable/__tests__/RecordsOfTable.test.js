@@ -186,7 +186,7 @@ describe('Component <RecordsOfTable />', () => {
         .dive()  // For Procedures-plugin
         // .dive()  // For Referral-plugin
         // .dive()  // For Silver-plugin Vitals
-        // .dive()  // For Silver-plugin Events
+        .dive()  // For Silver-plugin Events
         .dive();
 
     expect(component.find('Spinner')).toHaveLength(0);
@@ -203,8 +203,8 @@ describe('Component <RecordsOfTable />', () => {
     expect(component.state().indexOfTypeEvents).toEqual('');
 
     // For Events-plugin
-    // component.instance().handleGetHeadingsLists({ target: { value: 'events' }});
-    // expect(component.state().typeRecords).toEqual('events');
+    component.instance().handleGetHeadingsLists({ target: { value: 'events' }});
+    expect(component.state().typeRecords).toEqual('events');
 
     component.instance().handleGetHeadingsLists({ target: { value: 'diagnosis' }});
 
@@ -349,7 +349,7 @@ describe('Component <RecordsOfTable />', () => {
         .dive()  // For Procedures-plugin
         // .dive()  // For Referral-plugin
         // .dive()  // For Silver-plugin Vitals
-        // .dive()  // For Silver-plugin Events
+        .dive()  // For Silver-plugin Events
         .dive();
 
     expect(component.find('.has-error')).toHaveLength(1);
@@ -374,7 +374,7 @@ describe('Component <RecordsOfTable />', () => {
         .dive()  // For Procedures-plugin
         // .dive()  // For Referral-plugin
         // .dive()  // For Silver-plugin Vitals
-        // .dive()  // For Silver-plugin Events
+        .dive()  // For Silver-plugin Events
         .dive();
 
     component.setState({
@@ -416,7 +416,7 @@ describe('Component <RecordsOfTable />', () => {
         .dive()  // For Procedures-plugin
         // .dive()  // For Referral-plugin
         // .dive()  // For Silver-plugin Vitals
-        // .dive()  // For Silver-plugin Events
+        .dive()  // For Silver-plugin Events
         .dive();
 
     component.setProps({ allDiagnoses: [{
@@ -448,7 +448,7 @@ describe('Component <RecordsOfTable />', () => {
         .dive()  // For Procedures-plugin
         // .dive()  // For Referral-plugin
         // .dive()  // For Silver-plugin Vitals
-        // .dive()  // For Silver-plugin Events
+        .dive()  // For Silver-plugin Events
         .dive();
 
     component.setProps({ allDiagnoses: [{
@@ -477,7 +477,7 @@ describe('Component <RecordsOfTable />', () => {
         .dive()  // For Procedures-plugin
         // .dive()  // For Referral-plugin
         // .dive()  // For Silver-plugin Vitals
-        // .dive()  // For Silver-plugin Events
+        .dive()  // For Silver-plugin Events
         .dive();
 
     component.setProps({ allDiagnoses: [{
@@ -507,7 +507,7 @@ describe('Component <RecordsOfTable />', () => {
         .dive()  // For Procedures-plugin
         // .dive()  // For Referral-plugin
         // .dive()  // For Silver-plugin Vitals
-        // .dive()  // For Silver-plugin Events
+        .dive()  // For Silver-plugin Events
         .dive();
 
     component.setProps({ allDiagnoses: [{

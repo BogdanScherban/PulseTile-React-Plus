@@ -15,8 +15,8 @@ import { patientDiagnosesSelector } from '../../pages/Diagnosis/selectors';
 import { patientMedicationsSelector } from '../../pages/Medications/selectors';
 
 // THESE PLUGINS WERE EXTRACTED FROM MAIN AND RELOCATED TO SILVER-PLUGINS
-// import { fetchPatientEventsRequest } from '../../pages/Events/ducks/fetch-patient-events.duck';
-// import { patientEventsSelector } from '../../pages/Events/selectors';
+import { fetchPatientEventsRequest } from '../../pages/Events/ducks/fetch-patient-events.duck';
+import { patientEventsSelector } from '../../pages/Events/selectors';
 // import { fetchPatientVitalsRequest } from '../../pages/Vitals/ducks/fetch-patient-vitals.duck';
 // import { patientVitalsSelector } from '../../pages/Vitals/selectors';
 // import { fetchPatientReferralsRequest } from '../../pages/Referrals/ducks/fetch-patient-referrals.duck';
@@ -36,7 +36,7 @@ const mapDispatchToProps = dispatch => ({
 
     // THESE PLUGINS WERE EXTRACTED FROM MAIN AND RELOCATED TO SILVER-PLUGINS.
     // fetchPatientVitalsRequest,
-    // fetchPatientEventsRequest,
+    fetchPatientEventsRequest,
     // fetchPatientReferralsRequest,
     fetchPatientProceduresRequest,
 
@@ -47,7 +47,7 @@ const mapDispatchToProps = dispatch => ({
 
 // THESE PLUGINS WERE EXTRACTED FROM MAIN AND RELOCATED TO SILVER-PLUGINS
 // @connect(patientVitalsSelector)
-// @connect(patientEventsSelector)
+@connect(patientEventsSelector)
 // @connect(patientReferralsSelector)
 
 @connect(patientProceduresSelector)
@@ -85,7 +85,7 @@ export default class RecordsOfTable extends PureComponent {
         records: null,
       },
 
-      // THESE PLUGINS WERE EXTRACTED FROM MAIN AND RELOCATED TO SILVER-PLUGINS
+      // SILVER-PLUGINS
       // vitals: {
       //   title: 'Vitals',
       //   fetchList: 'fetchPatientVitalsRequest',
@@ -93,13 +93,13 @@ export default class RecordsOfTable extends PureComponent {
       //   setMethodName: 'setVitalsRecords',
       //   records: null,
       // },
-      // events: {
-      //   title: 'Events',
-      //   fetchList: 'fetchPatientEventsRequest',
-      //   stateName: 'allEvents',
-      //   setMethodName: 'setEventsRecords',
-      //   records: null,
-      // },
+      events: {
+        title: 'Events',
+        fetchList: 'fetchPatientEventsRequest',
+        stateName: 'allEvents',
+        setMethodName: 'setEventsRecords',
+        records: null,
+      },
 
       procedures: {
         title: 'Procedures',

@@ -19,7 +19,7 @@ export const clientUrls = {
   CLINICAL_STATEMENTS: 'clinicalStatements',
   DOCUMENTS: 'documents',
   DRAWINGS: 'drawings',
-  // EVENTS: 'events',
+  EVENTS: 'events',
   MDTS: 'mdt',
   ORDERS: 'orders',
   PERSONAL_NOTES: 'personalNotes',
@@ -100,12 +100,12 @@ const pluginsPages = {
       state: '/drawings',
     }],
   },
-  // 'events': {
-  //   breadcrumbs: [{
-  //     title: 'Events',
-  //     state: '/events',
-  //   }],
-  // },
+  'events': {
+    breadcrumbs: [{
+      title: 'Events',
+      state: '/events',
+    }],
+  },
   'mdt': {
     breadcrumbs: [{
       title: 'Generic MDT',

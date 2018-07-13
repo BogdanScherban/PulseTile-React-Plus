@@ -15,9 +15,9 @@ import { fetchPatientMedicationsDetailRequest } from '../../pages/Medications/du
 import { patientDiagnosesDetailSelector } from '../../pages/Diagnosis/selectors';
 import { patientMedicationsDetailSelector } from '../../pages/Medications/selectors';
 
-// THESE PLUGINS WERE EXTRACTED FROM MAIN AND RELOCATED TO SILVER-PLUGINS
-// import { fetchPatientEventsDetailRequest } from '../../pages/Events/ducks/fetch-patient-events-detail.duck';
-// import { patientEventsDetailSelector } from '../../pages/Events/selectors';
+// SILVER-PLUGINS
+import { fetchPatientEventsDetailRequest } from '../../pages/Events/ducks/fetch-patient-events-detail.duck';
+import { patientEventsDetailSelector } from '../../pages/Events/selectors';
 // import { fetchPatientVitalsDetailRequest } from '../../pages/Vitals/ducks/fetch-patient-vitals-detail.duck';
 // import { patientVitalsDetailSelector } from '../../pages/Vitals/selectors';
 // import { fetchPatientReferralsDetailRequest } from '../../pages/Referrals/ducks/fetch-patient-referrals-detail.duck';
@@ -33,10 +33,10 @@ const mapDispatchToProps = dispatch => ({
     fetchPatientDiagnosesDetailRequest,
     fetchPatientMedicationsDetailRequest,
 
-    // THESE PLUGINS WERE EXTRACTED FROM MAIN AND RELOCATED TO SILVER-PLUGINS
+    // SILVER-PLUGINS
     // fetchPatientVitalsDetailRequest,
     fetchPatientProceduresDetailRequest,
-    // fetchPatientEventsDetailRequest,
+    fetchPatientEventsDetailRequest,
     // fetchPatientReferralsDetailRequest,
 
   }, dispatch) });
@@ -44,9 +44,9 @@ const mapDispatchToProps = dispatch => ({
 @connect(patientDiagnosesDetailSelector, mapDispatchToProps)
 @connect(patientMedicationsDetailSelector)
 
-// THESE PLUGINS WERE EXTRACTED FROM MAIN AND RELOCATED TO SILVER-PLUGINS
+// SILVER-PLUGINS
 // @connect(patientVitalsDetailSelector)
-// @connect(patientEventsDetailSelector)
+@connect(patientEventsDetailSelector)
 @connect(patientProceduresDetailSelector)
 // @connect(patientReferralsDetailSelector)
 
@@ -74,11 +74,11 @@ export default class RecordsOfTablePopover extends PureComponent {
       //   fetchDetail: 'fetchPatientVitalsDetailRequest',
       //   stateName: 'vitalDetail',
       // },
-      // events: {
-      //   title: 'Events',
-      //   fetchDetail: 'fetchPatientEventsDetailRequest',
-      //   stateName: 'eventDetail',
-      // },
+      events: {
+        title: 'Events',
+        fetchDetail: 'fetchPatientEventsDetailRequest',
+        stateName: 'eventDetail',
+      },
       // referrals: {
       //   title: 'Referrals',
       //   fetchDetail: 'fetchPatientReferralsDetailRequest',
