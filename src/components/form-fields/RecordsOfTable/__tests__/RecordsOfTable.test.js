@@ -184,7 +184,7 @@ describe('Component <RecordsOfTable />', () => {
       />)
         .dive()
         .dive()  // For Procedures-plugin
-        // .dive()  // For Referral-plugin
+        .dive()  // For Referral-plugin
         // .dive()  // For Silver-plugin Vitals
         .dive()  // For Silver-plugin Events
         .dive();
@@ -347,7 +347,7 @@ describe('Component <RecordsOfTable />', () => {
       />)
         .dive()
         .dive()  // For Procedures-plugin
-        // .dive()  // For Referral-plugin
+        .dive()  // For Referral-plugin
         // .dive()  // For Silver-plugin Vitals
         .dive()  // For Silver-plugin Events
         .dive();
@@ -372,7 +372,7 @@ describe('Component <RecordsOfTable />', () => {
       />)
         .dive()
         .dive()  // For Procedures-plugin
-        // .dive()  // For Referral-plugin
+        .dive()  // For Referral-plugin
         // .dive()  // For Silver-plugin Vitals
         .dive()  // For Silver-plugin Events
         .dive();
@@ -414,7 +414,7 @@ describe('Component <RecordsOfTable />', () => {
       />)
         .dive()
         .dive()  // For Procedures-plugin
-        // .dive()  // For Referral-plugin
+        .dive()  // For Referral-plugin
         // .dive()  // For Silver-plugin Vitals
         .dive()  // For Silver-plugin Events
         .dive();
@@ -446,7 +446,7 @@ describe('Component <RecordsOfTable />', () => {
       />)
         .dive()
         .dive()  // For Procedures-plugin
-        // .dive()  // For Referral-plugin
+        .dive()  // For Referral-plugin
         // .dive()  // For Silver-plugin Vitals
         .dive()  // For Silver-plugin Events
         .dive();
@@ -475,7 +475,7 @@ describe('Component <RecordsOfTable />', () => {
       />)
         .dive()
         .dive()  // For Procedures-plugin
-        // .dive()  // For Referral-plugin
+        .dive()  // For Referral-plugin
         // .dive()  // For Silver-plugin Vitals
         .dive()  // For Silver-plugin Events
         .dive();
@@ -505,7 +505,7 @@ describe('Component <RecordsOfTable />', () => {
       />)
         .dive()
         .dive()  // For Procedures-plugin
-        // .dive()  // For Referral-plugin
+        .dive()  // For Referral-plugin
         // .dive()  // For Silver-plugin Vitals
         .dive()  // For Silver-plugin Events
         .dive();

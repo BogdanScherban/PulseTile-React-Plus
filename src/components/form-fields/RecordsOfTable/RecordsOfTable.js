@@ -15,13 +15,15 @@ import { patientDiagnosesSelector } from '../../pages/Diagnosis/selectors';
 import { patientMedicationsSelector } from '../../pages/Medications/selectors';
 
 // THESE PLUGINS WERE EXTRACTED FROM MAIN AND RELOCATED TO SILVER-PLUGINS
+// Events
 import { fetchPatientEventsRequest } from '../../pages/Events/ducks/fetch-patient-events.duck';
 import { patientEventsSelector } from '../../pages/Events/selectors';
+// Vitals
 // import { fetchPatientVitalsRequest } from '../../pages/Vitals/ducks/fetch-patient-vitals.duck';
 // import { patientVitalsSelector } from '../../pages/Vitals/selectors';
-// import { fetchPatientReferralsRequest } from '../../pages/Referrals/ducks/fetch-patient-referrals.duck';
-// import { patientReferralsSelector } from '../../pages/Referrals/selectors';
-
+// Referrals
+import { fetchPatientReferralsRequest } from '../../pages/Referrals/ducks/fetch-patient-referrals.duck';
+import { patientReferralsSelector } from '../../pages/Referrals/selectors';
 // Procedures
 import { fetchPatientProceduresRequest } from '../../pages/Procedures/ducks/fetch-patient-procedures.duck';
 import { patientProceduresSelector } from '../../pages/Procedures/selectors';
@@ -37,7 +39,7 @@ const mapDispatchToProps = dispatch => ({
     // THESE PLUGINS WERE EXTRACTED FROM MAIN AND RELOCATED TO SILVER-PLUGINS.
     // fetchPatientVitalsRequest,
     fetchPatientEventsRequest,
-    // fetchPatientReferralsRequest,
+    fetchPatientReferralsRequest,
     fetchPatientProceduresRequest,
 
   }, dispatch) });
@@ -48,7 +50,7 @@ const mapDispatchToProps = dispatch => ({
 // THESE PLUGINS WERE EXTRACTED FROM MAIN AND RELOCATED TO SILVER-PLUGINS
 // @connect(patientVitalsSelector)
 @connect(patientEventsSelector)
-// @connect(patientReferralsSelector)
+@connect(patientReferralsSelector)
 
 @connect(patientProceduresSelector)
 
@@ -100,7 +102,6 @@ export default class RecordsOfTable extends PureComponent {
         setMethodName: 'setEventsRecords',
         records: null,
       },
-
       procedures: {
         title: 'Procedures',
         fetchList: 'fetchPatientProceduresRequest',
@@ -108,14 +109,13 @@ export default class RecordsOfTable extends PureComponent {
         setMethodName: 'setProceduresRecords',
         records: null,
       },
-
-      // referrals: {
-      //   title: 'Referrals',
-      //   fetchList: 'fetchPatientReferralsRequest',
-      //   stateName: 'allReferrals',
-      //   setMethodName: 'setReferralsRecords',
-      //   records: null,
-      // },
+      referrals: {
+        title: 'Referrals',
+        fetchList: 'fetchPatientReferralsRequest',
+        stateName: 'allReferrals',
+        setMethodName: 'setReferralsRecords',
+        records: null,
+      },
     },
   };
 

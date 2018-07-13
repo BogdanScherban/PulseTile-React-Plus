@@ -16,12 +16,15 @@ import { patientDiagnosesDetailSelector } from '../../pages/Diagnosis/selectors'
 import { patientMedicationsDetailSelector } from '../../pages/Medications/selectors';
 
 // SILVER-PLUGINS
+// Events
 import { fetchPatientEventsDetailRequest } from '../../pages/Events/ducks/fetch-patient-events-detail.duck';
 import { patientEventsDetailSelector } from '../../pages/Events/selectors';
+// Vitals
 // import { fetchPatientVitalsDetailRequest } from '../../pages/Vitals/ducks/fetch-patient-vitals-detail.duck';
 // import { patientVitalsDetailSelector } from '../../pages/Vitals/selectors';
-// import { fetchPatientReferralsDetailRequest } from '../../pages/Referrals/ducks/fetch-patient-referrals-detail.duck';
-// import { patientReferralsDetailSelector } from '../../pages/Referrals/selectors';
+// Referrals
+import { fetchPatientReferralsDetailRequest } from '../../pages/Referrals/ducks/fetch-patient-referrals-detail.duck';
+import { patientReferralsDetailSelector } from '../../pages/Referrals/selectors';
 
 // Procedures
 import { fetchPatientProceduresDetailRequest } from '../../pages/Procedures/ducks/fetch-patient-procedures-detail.duck';
@@ -37,7 +40,7 @@ const mapDispatchToProps = dispatch => ({
     // fetchPatientVitalsDetailRequest,
     fetchPatientProceduresDetailRequest,
     fetchPatientEventsDetailRequest,
-    // fetchPatientReferralsDetailRequest,
+    fetchPatientReferralsDetailRequest,
 
   }, dispatch) });
 
@@ -48,7 +51,7 @@ const mapDispatchToProps = dispatch => ({
 // @connect(patientVitalsDetailSelector)
 @connect(patientEventsDetailSelector)
 @connect(patientProceduresDetailSelector)
-// @connect(patientReferralsDetailSelector)
+@connect(patientReferralsDetailSelector)
 
 export default class RecordsOfTablePopover extends PureComponent {
   static propTypes = {
@@ -79,11 +82,11 @@ export default class RecordsOfTablePopover extends PureComponent {
         fetchDetail: 'fetchPatientEventsDetailRequest',
         stateName: 'eventDetail',
       },
-      // referrals: {
-      //   title: 'Referrals',
-      //   fetchDetail: 'fetchPatientReferralsDetailRequest',
-      //   stateName: 'referralDetail',
-      // },
+      referrals: {
+        title: 'Referrals',
+        fetchDetail: 'fetchPatientReferralsDetailRequest',
+        stateName: 'referralDetail',
+      },
 
       procedures: {
         title: 'Procedures',

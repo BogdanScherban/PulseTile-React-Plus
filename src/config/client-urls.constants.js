@@ -25,7 +25,7 @@ export const clientUrls = {
   PERSONAL_NOTES: 'personalNotes',
   PROCEDURES: 'procedures',
   RESULTS: 'results',
-  // REFERRALS: 'referrals',
+  REFERRALS: 'referrals',
   TOP_THREE_THINGS: 'topThreeThings',
   TRANSFERS_OF_CARE: 'transfer-of-care',
   VACCINATIONS: 'vaccinations',
@@ -124,12 +124,12 @@ const pluginsPages = {
       state: '/personalNotes',
     }],
   },
-  // 'referrals': {
-  //   breadcrumbs: [{
-  //     title: 'Referrals',
-  //     state: '/referrals',
-  //   }],
-  // },
+  'referrals': {
+    breadcrumbs: [{
+      title: 'Referrals',
+      state: '/referrals',
+    }],
+  },
   'procedures': {
     breadcrumbs: [{
       title: 'Procedures',
