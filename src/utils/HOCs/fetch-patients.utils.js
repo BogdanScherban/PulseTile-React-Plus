@@ -135,15 +135,15 @@ export const fetchPatientClinicalNotesOnMount = (generateFetchListOnMount('fetch
 export const fetchPatientClinicalNotesDetailOnMount = (generateFetchDetailOnMount('fetchPatientClinicalNotesDetailRequest'));
 
 // Clinical Statements
-// export const fetchPatientClinicalStatementsOnMount = (generateFetchListOnMount('fetchPatientClinicalStatementsRequest'));
-// export const fetchPatientClinicalStatementsDetailOnMount = (generateFetchDetailOnMount('fetchPatientClinicalStatementsDetailRequest'));
-// export const fetchPatientClinicalStatementsTagsOnMount = ({
-//   componentDidMount() {
-//     const { actions, match } = this.props;
-//     const userId = _.get('params.userId', match);
-//     if (userId) actions.fetchPatientClinicalStatementsTagsRequest({ userId });
-//   },
-// });
+export const fetchPatientClinicalStatementsOnMount = (generateFetchListOnMount('fetchPatientClinicalStatementsRequest'));
+export const fetchPatientClinicalStatementsDetailOnMount = (generateFetchDetailOnMount('fetchPatientClinicalStatementsDetailRequest'));
+export const fetchPatientClinicalStatementsTagsOnMount = ({
+  componentDidMount() {
+    const { actions, match } = this.props;
+    const userId = _.get('params.userId', match);
+    if (userId) actions.fetchPatientClinicalStatementsTagsRequest({ userId });
+  },
+});
 
 // Documents
 // export const fetchPatientDocumentsOnMount = (generateFetchListOnMount('fetchPatientDocumentsRequest'));

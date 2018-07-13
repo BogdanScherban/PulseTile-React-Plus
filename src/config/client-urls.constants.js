@@ -16,7 +16,7 @@ export const clientUrls = {
 
   // These plugins were extracted and relocated to SILVER
   CLINICAL_NOTES: 'clinicalNotes',
-  // CLINICAL_STATEMENTS: 'clinicalStatements',
+  CLINICAL_STATEMENTS: 'clinicalStatements',
   // DOCUMENTS: 'documents',
   // DRAWINGS: 'drawings',
   // EVENTS: 'events',
@@ -82,12 +82,12 @@ const pluginsPages = {
       state: '/clinicalNotes',
     }],
   },
-  // 'clinicalStatements': {
-  //   breadcrumbs: [{
-  //     title: 'Clinical Statements',
-  //     state: '/clinicalStatements',
-  //   }],
-  // },
+  'clinicalStatements': {
+    breadcrumbs: [{
+      title: 'Clinical Statements',
+      state: '/clinicalStatements',
+    }],
+  },
   // 'documents': {
   //   breadcrumbs: [{
   //     title: 'Documents',

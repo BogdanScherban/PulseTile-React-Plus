@@ -13,7 +13,7 @@ import proms from './components/pages/PROMs/index';
 
 // WERE REMOVED TO SILVER PLUGINS
 import clinicalNotes from './components/pages/ClinicalNotes/index';
-// import clinicalStatements from './components/pages/ClinicalStatements/index';
+import clinicalStatements from './components/pages/ClinicalStatements/index';
 // import documents from './components/pages/Documents/index';
 // import drawings from './components/pages/Drawings/index';
 // import events from './components/pages/Events/index';
@@ -47,7 +47,7 @@ export const plugins = [
 
   // WERE REMOVED TO SILVER PLUGINS
   clinicalNotes,
-  // clinicalStatements,
+  clinicalStatements,
   // documents,
   // drawings,
   // events,
