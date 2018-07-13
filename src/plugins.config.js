@@ -24,7 +24,7 @@ import procedures from './components/pages/Procedures/index';
 // import referrals from './components/pages/Referrals/index';
 // import testResults from './components/pages/Results/index';
 import topThreeThings from './components/pages/TopThreeThings/index';
-// import transfersOfCare from './components/pages/TransfersOfCare/index';
+import transfersOfCare from './components/pages/TransfersOfCare/index';
 import vaccinations from './components/pages/Vaccinations/index';
 // import vitals from './components/pages/Vitals/index';
 
@@ -57,7 +57,7 @@ export const plugins = [
   procedures,
   // referrals,
   topThreeThings,
-  // transfersOfCare,
+  transfersOfCare,
   // testResults,
   vaccinations,
   // vitals,

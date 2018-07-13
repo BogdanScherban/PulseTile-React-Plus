@@ -27,7 +27,7 @@ export const clientUrls = {
   // RESULTS: 'results',
   // REFERRALS: 'referrals',
   TOP_THREE_THINGS: 'topThreeThings',
-  // TRANSFERS_OF_CARE: 'transfer-of-care',
+  TRANSFERS_OF_CARE: 'transfer-of-care',
   VACCINATIONS: 'vaccinations',
   // VITALS: 'vitals',
 
@@ -148,12 +148,12 @@ const pluginsPages = {
       state: '/topThreeThings',
     }],
   },
-  // 'transfer-of-care': {
-  //   breadcrumbs: [{
-  //     title: 'Transfers Of Care',
-  //     state: '/transfers-of-care',
-  //   }],
-  // },
+  'transfer-of-care': {
+    breadcrumbs: [{
+      title: 'Transfers Of Care',
+      state: '/transfers-of-care',
+    }],
+  },
   'vaccinations': {
     breadcrumbs: [{
       title: 'Vaccinations',
@@ -168,12 +168,12 @@ const pluginsPages = {
   // },
 
   // These plugins were extracted and relocated to BRONZE
-  // 'proms': {
-  //   breadcrumbs: [{
-  //     title: 'PROMs',
-  //     state: '/proms',
-  //   }],
-  // },
+  'proms': {
+    breadcrumbs: [{
+      title: 'PROMs',
+      state: '/proms',
+    }],
+  },
   'genericPlugin': {
     breadcrumbs: [{
       title: 'Generic Plugin',
