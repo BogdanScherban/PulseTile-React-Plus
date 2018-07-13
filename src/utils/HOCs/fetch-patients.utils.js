@@ -102,14 +102,12 @@ export const fetchSeriesOnMount = ({
 
 // FOR CARBON PLUGINS
 // Images
-// export const fetchPatientImagesOnMount = (generateFetchListOnMount('fetchPatientImagesRequest'));
+export const fetchPatientImagesOnMount = (generateFetchListOnMount('fetchPatientImagesRequest'));
 
 // FOR BRONZE PLUGINS
-
 // GenericPlugin
 export const fetchPatientGenericPluginOnMount = (generateFetchListOnMount('fetchPatientGenericPluginRequest'));
 export const fetchPatientGenericPluginDetailOnMount = (generateFetchDetailOnMount('fetchPatientGenericPluginDetailRequest'));
-
 // DiaryEntry
 export const fetchPatientDiaryEntryOnMount = (generateFetchListOnMount('fetchPatientDiaryEntryRequest'));
 export const fetchPatientDiaryEntryDetailOnMount = (generateFetchDetailOnMount('fetchPatientDiaryEntryDetailRequest'));

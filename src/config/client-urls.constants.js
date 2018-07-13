@@ -37,8 +37,8 @@ export const clientUrls = {
   DIARY_ENTRY: 'diaryEntry',
   // FEEDS: 'feeds',
 
-  // These plugins were extracted and relocated to CARBON
-  // IMAGES: 'images',
+  // CARBON PLUGINS
+  IMAGES: 'images',
 };
 
 const pluginsPages = {
@@ -67,13 +67,13 @@ const pluginsPages = {
     }],
   },
 
-  // These plugins were extracted and relocated to CARBON
-  // 'images': {
-  //     breadcrumbs: [{
-  //         title: 'Images',
-  //         state: '/images',
-  //     }],
-  // },
+  // CARBON PLUGINS
+  'images': {
+      breadcrumbs: [{
+          title: 'Images',
+          state: '/images',
+      }],
+  },
 
   // These plugins were extracted and relocated to SILVER
   'clinicalNotes': {

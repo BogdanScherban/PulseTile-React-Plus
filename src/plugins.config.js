@@ -28,8 +28,8 @@ import transfersOfCare from './components/pages/TransfersOfCare/index';
 import vaccinations from './components/pages/Vaccinations/index';
 // import vitals from './components/pages/Vitals/index';
 
-// WERE REMOVED TO CARBON PLUGINS
-// import images from './components/pages/Images/index';
+// CARBON PLUGINS
+import images from './components/pages/Images/index';
 
 // the order of the elements in this array affects the order of the Headings in the sidebar
 export const plugins = [
@@ -62,8 +62,8 @@ export const plugins = [
   vaccinations,
   // vitals,
 
-  // WERE REMOVED TO CARBON PLUGINS
-  // images,
+  // CARBON PLUGINS
+  images,
 ];
 
 export const sidebarConfig = [
