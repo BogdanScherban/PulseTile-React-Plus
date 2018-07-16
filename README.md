@@ -1,4 +1,4 @@
-# PulseTile-React
+# PulseTile-React-Plus
 
 [![travis build](https://img.shields.io/travis/PulseTile/PulseTile-React.svg?style=flat-square)](https://travis-ci.org/PulseTile/PulseTile-React)
 [![Codecov](https://img.shields.io/codecov/c/github/PulseTile/PulseTile-React/develop.svg?style=flat-square)](https://codecov.io/gh/PulseTile/PulseTile-React)
@@ -30,7 +30,7 @@ To develop and run the application locally you must have the following installed
 ### Installing
 
     #clone
-    $ git clone https://github.com/PulseTile/PulseTile-React.git
+    $ git clone https://github.com/PulseTile/PulseTile-React-Plus.git
     $ cd PulseTile-React
     # install dependencies
     $ npm install
